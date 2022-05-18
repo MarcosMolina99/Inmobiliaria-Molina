@@ -41,7 +41,7 @@ li{
     /* ANIMACIONES SOBRE ITEM DE LISTA */
 .item:hover{
     background-color: #3baea0;
-    width: 100px;
+    width: 130px;
 }
 h1{
     /* TAMAÑO DE LA LETRA, ESTILO Y ALINEACION DEL ENCABEZADI */
@@ -57,6 +57,12 @@ h1{
     /* border: 2px solid black; */
     margin-left: 25%;
 }
+.carousel-inner{
+    height: 800px;
+}
+#fotoCarrousel{
+    height: 700px;
+}
 div h2{
     /* ALINEACION, FONDO, COLOR Y ESTILO DEL ENCABEZADO */
     text-align: center;
@@ -69,7 +75,8 @@ div h2{
 div p{
     /* COLOR, PADDING Y FAMILIA DE LA FUENTE DEL PARRAFO */
     color: black;
-    padding-top: 300px;
+    font-size: 20px;
+    text-align: center  ;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 section h2{
@@ -77,6 +84,7 @@ section h2{
     margin-top: 70px;
     color: #0092ca;
     font-style: italic;
+    text-align: center;
 
 }
 .animacion{
@@ -114,13 +122,6 @@ footer{
     text-decoration: none;
     word-spacing: normal;
     font-size: 26px;
-}
-.fondoPrincipal{
-    /* IMAGEN DE FONDO */
-    background-image: url("../img/img-6.jpg");
-    height: 400px;
-    /* background-size: cover; */
-    
 }
 /* body{
     background-color: #feffdf;
@@ -236,6 +237,36 @@ textarea{
     border-left: none;
     height: 426px;
 }
+#botonDetalles{
+    margin-left: 85%;
+    margin-top: 210px;
+    font-size: 20px;
+}
+#botonDetalles2{
+    margin-left: 85%;
+    margin-top: 110px;
+    font-size: 20px;
+}
+#botonDetalles3{
+    margin-left: 85%;
+    margin-top: 670px;
+    font-size: 20px;
+}
+#botonDetallesAlquiler1{
+    margin-left: 85%;
+    margin-top: 180px;
+    font-size: 20px;
+}
+#botonDetallesAlquiler2{
+    margin-left: 85%;
+    margin-top: 120px;
+    font-size: 20px;
+}
+#botonDetallesAlquiler3{
+    margin-left: 85%;
+    margin-top: 180px;
+    font-size: 20px;
+}
 .descripcionCasa2{
     font-size: 20px;
     text-align: left;
@@ -324,14 +355,14 @@ textarea{
 /* /ALQUILER */
 
 /* GALERÍA */
-.llaves{
+#llaves{
     margin-left: 10px;
 }
 
 
 
 /* VERSION MOBILE */
-@media(max-width: 375px){
+@media(max-width: 375px) and (max-height: 812px){
     .contenedorPadre{
         display: grid;
         grid-template-columns: auto;
@@ -579,7 +610,8 @@ textarea{
 
  /*VERSION IPAD 768X1024 */
 }
-@media(min-width: 400px) and (max-width: 768px){
+@media(min-width: 400px) and (max-width: 768px) and
+    (max-height:1024px){
     /* INDEX */
     .contenedorPadre{
         display: grid;
