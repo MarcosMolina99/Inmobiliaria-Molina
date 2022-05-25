@@ -1,12 +1,14 @@
-.contenedorFotos {
+/* GALERÍA */
+.contenedorFotos{
     display: flex;
     flex-flow: row wrap;
-  }
-  
-  #galeriaPrimera {
+}
+#galeriaPrimera{
     width: 850px;
-  }
-  
-  #img-8, #img-12 {
+}
+#img-8{
     width: 600px;
-  }
+}
+#img-12{
+    width: 600px;
+}

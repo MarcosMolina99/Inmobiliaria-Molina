@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* GALERÍA */
 .contenedorFotos {
   display: flex;
   flex-flow: row wrap; }
@@ -5,5 +7,8 @@
 #galeriaPrimera {
   width: 850px; }
 
-#img-8, #img-12 {
+#img-8 {
+  width: 600px; }
+
+#img-12 {
   width: 600px; }
