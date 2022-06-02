@@ -1,0 +1,99 @@
+/* ALQUILER */
+body{
+    main{
+        .todasEnAlquiler{
+            display: grid;
+            grid-template-rows: auto auto auto;
+            grid-template-columns: 1fr auto;
+            row-gap: 20px;
+            grid-template-areas:
+            "fotoAlquiler1 descripcionAlquiler1"
+            "fotoAlquiler2 descripcionAlquiler2"
+            "fotoAlquiler3 descripcionAlquiler3";
+
+            .fotoAlquiler1{
+                grid-area: fotoAlquiler1;
+                border: 2px solid black;
+                height: 426px;
+
+                .primeraFoto{
+                    height: 422px;
+                }
+            }
+            .descripcionAlquiler1{
+                grid-area: descripcionAlquiler1;
+                font-size: 20px;
+                border: 2px solid black;
+                border-left: none;
+
+                .textoAlquiler1{
+                    padding: 30px;
+                }
+
+                #botonDetallesAlquiler1{
+                    margin-left: 85%;
+                    margin-top: 120px;
+                    font-size: 20px;
+                }
+            }
+
+            .fotoAlquiler2{
+                grid-area: fotoAlquiler2;
+                border: 2px solid black;
+                height: 360px;
+
+                .segundaFoto{
+                    height: 356px;
+                    width: 634px;
+                }
+            }
+
+            .descripcionAlquiler2{
+                grid-area: descripcionAlquiler2;
+                font-size: 20px;
+                border: 2px solid black;
+                border-left: none;
+
+                .textoAlquiler2{
+                    padding: 30px;
+                }
+
+                #botonDetallesAlquiler2{
+                    margin-left: 85%;
+                    margin-top: 80px;
+                    font-size: 20px;
+                }
+            }
+
+            .fotoAlquiler3{
+                grid-area: fotoAlquiler3;
+                border: 2px solid black;
+                height: 425px;
+                
+                .terceraFoto{
+                    height: 421px;
+                    width: 634px;
+                }
+
+            }
+
+            .descripcionAlquiler3{
+                grid-area: descripcionAlquiler3;
+                font-size: 20px;
+                border: 2px solid black;
+                border-left: none;
+
+                .textoAlquiler3{
+                    padding: 30px;
+                }
+
+                #botonDetallesAlquiler3{
+                    margin-left: 85%;
+                    margin-top: 125px;
+                    font-size: 20px;
+                }
+
+            }
+        }
+    }
+}

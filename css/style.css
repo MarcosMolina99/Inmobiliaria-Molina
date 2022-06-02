@@ -1,14 +1,342 @@
 @charset "UTF-8";
+body header nav .divLogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center; }
+  body header nav .divLogo img {
+    height: 150px;
+    margin: 20px; }
+  body header nav .divLogo h1 {
+    /* TAMAÑO DE LA LETRA, ESTILO Y ALINEACION DEL ENCABEZADI */
+    font-size: 5rem;
+    font-style: italic;
+    text-align: center;
+    font-family: 'MonteCarlo', cursive;
+    /* background-color: #007cb9; */
+    /* background: rgb(9,181,217);
+                    background: linear-gradient(0deg, rgba(9,181,217,1) 0%, rgba(0,124,185,1) 100%); */
+    background: #46baf2;
+    background: radial-gradient(circle, #46baf2 0%, white 85%);
+    /* border: 2px solid black; */
+    margin-left: 20%; }
+
+body header nav ul {
+  /* ESPACIADO ENTRE PALABRAS */
+  word-spacing: 20px;
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  margin-top: 20px; }
+  body header nav ul .item {
+    /* BOX MODELING: BORDES Y DISPLAY */
+    /* MODIFICACIONES TEXTO: ESTILO, WEIGHT, TAMAÑO */
+    /* BACKGROUND: COLOR DE FONDO */
+    font-weight: bolder;
+    font-style: oblique;
+    border: 2px solid black;
+    border-radius: 4rem;
+    font-size: 24px;
+    background-color: #bae8e8;
+    margin-right: 30px;
+    padding: 10px;
+    text-align: center;
+    transition: all 2s; }
+    body header nav ul .item:hover {
+      background-color: #3baea0;
+      width: 130px; }
+    body header nav ul .item .ancla {
+      text-decoration: none; }
+
+.pieDePagina {
+  /* FONDO DEL FOOTER Y DISPLAY */
+  font-size: 20px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #46baf2;
+  background: linear-gradient(90deg, #46baf2 0%, white 45%, white 46%, white 47%, white 48%, white 49%, white 50%, white 51%, white 52%, white 53%, white 54%, white 55%, white 56%, white 57%, white 58%, white 59%, white 60%, #46baf2 100%); }
+  .pieDePagina .miMapa {
+    margin-top: 50px; }
+  .pieDePagina ul li .linkFooter {
+    text-decoration: none;
+    word-spacing: normal;
+    font-size: 26px; }
+  .pieDePagina div .redSocial {
+    width: 50px;
+    margin-left: 30px; }
+
+body main .fondoPrincipal .tituloCarousel {
+  margin-top: 70px;
+  color: #0092ca;
+  font-style: italic;
+  text-align: center; }
+
+body main #carouselExampleControls .carouselInner div #fotoCarrousel {
+  width: 200px; }
+
+body main section .introduccion {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 60px;
+  font-weight: bolder;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+body main section .subtitulo {
+  margin-top: 70px;
+  color: #0092ca;
+  font-style: italic;
+  text-align: center; }
+
+body main section .quienesSomos {
+  padding: 20px;
+  line-height: 45px;
+  font-size: 23px; }
+
+body main .recomendacion {
+  margin-top: 30px;
+  margin-left: 550px;
+  font-size: 24px; }
+
+body main .marcas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-right: 150px; }
+  body main .marcas div .fotosPatrocinios {
+    margin-left: 150px;
+    margin-top: 50px;
+    width: 120px; }
+  body main .marcas div .nombreMarcas {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 45px;
+    margin-top: 40px; }
+  body main .marcas div #pintureria {
+    margin-left: 90px; }
+  body main .marcas div #ventanas {
+    margin-left: 100px; }
+
+body main .todasEnCompra {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr auto;
+  row-gap: 20px;
+  grid-template-areas: "foto1 descripcion1" "foto2 descripcion2" "foto3 descripcion3"; }
+  body main .todasEnCompra .fotoCasa1 {
+    grid-area: foto1;
+    border: 2px solid black;
+    height: 426px; }
+    body main .todasEnCompra .fotoCasa1 .primeraFoto {
+      height: 422px;
+      width: 646px; }
+  body main .todasEnCompra .descripcionCasa1 {
+    font-size: 20px;
+    text-align: left;
+    grid-area: descripcion1;
+    border: 2px solid black;
+    border-left: none;
+    height: 426px; }
+    body main .todasEnCompra .descripcionCasa1 .textoCasa1 {
+      padding: 30px; }
+    body main .todasEnCompra .descripcionCasa1 #botonDetalles {
+      margin-left: 85%;
+      margin-top: 140px;
+      font-size: 20px; }
+  body main .todasEnCompra .fotoCasa2 {
+    grid-area: foto2;
+    border: 2px solid black;
+    height: 363px; }
+    body main .todasEnCompra .fotoCasa2 .segundaFoto {
+      height: 359px;
+      width: 646px; }
+  body main .todasEnCompra .descripcionCasa2 {
+    font-size: 20px;
+    text-align: left;
+    grid-area: descripcion2;
+    border: 2px solid black;
+    border-left: none; }
+    body main .todasEnCompra .descripcionCasa2 .textoCasa2 {
+      padding: 30px; }
+    body main .todasEnCompra .descripcionCasa2 #botonDetalles2 {
+      margin-left: 85%;
+      margin-top: 50px;
+      font-size: 20px; }
+  body main .todasEnCompra .fotoCasa3 {
+    grid-area: foto3;
+    width: 650px;
+    border: 2px solid black;
+    height: 420px; }
+    body main .todasEnCompra .fotoCasa3 .terceraFoto {
+      width: 646px; }
+  body main .todasEnCompra .descripcionCasa3 {
+    font-size: 20px;
+    text-align: left;
+    grid-area: descripcion3;
+    border: 2px solid black;
+    border-left: none;
+    height: 420px; }
+    body main .todasEnCompra .descripcionCasa3 .textoCasa3 {
+      padding: 30px; }
+    body main .todasEnCompra .descripcionCasa3 #botonDetalles3 {
+      margin-left: 85%;
+      margin-top: 80px;
+      font-size: 20px; }
+
+/* /COMPRA */
+/* ALQUILER */
+body main .todasEnAlquiler {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr auto;
+  row-gap: 20px;
+  grid-template-areas: "fotoAlquiler1 descripcionAlquiler1" "fotoAlquiler2 descripcionAlquiler2" "fotoAlquiler3 descripcionAlquiler3"; }
+  body main .todasEnAlquiler .fotoAlquiler1 {
+    grid-area: fotoAlquiler1;
+    border: 2px solid black;
+    height: 426px; }
+    body main .todasEnAlquiler .fotoAlquiler1 .primeraFoto {
+      height: 422px; }
+  body main .todasEnAlquiler .descripcionAlquiler1 {
+    grid-area: descripcionAlquiler1;
+    font-size: 20px;
+    border: 2px solid black;
+    border-left: none; }
+    body main .todasEnAlquiler .descripcionAlquiler1 .textoAlquiler1 {
+      padding: 30px; }
+    body main .todasEnAlquiler .descripcionAlquiler1 #botonDetallesAlquiler1 {
+      margin-left: 85%;
+      margin-top: 120px;
+      font-size: 20px; }
+  body main .todasEnAlquiler .fotoAlquiler2 {
+    grid-area: fotoAlquiler2;
+    border: 2px solid black;
+    height: 360px; }
+    body main .todasEnAlquiler .fotoAlquiler2 .segundaFoto {
+      height: 356px;
+      width: 634px; }
+  body main .todasEnAlquiler .descripcionAlquiler2 {
+    grid-area: descripcionAlquiler2;
+    font-size: 20px;
+    border: 2px solid black;
+    border-left: none; }
+    body main .todasEnAlquiler .descripcionAlquiler2 .textoAlquiler2 {
+      padding: 30px; }
+    body main .todasEnAlquiler .descripcionAlquiler2 #botonDetallesAlquiler2 {
+      margin-left: 85%;
+      margin-top: 80px;
+      font-size: 20px; }
+  body main .todasEnAlquiler .fotoAlquiler3 {
+    grid-area: fotoAlquiler3;
+    border: 2px solid black;
+    height: 425px; }
+    body main .todasEnAlquiler .fotoAlquiler3 .terceraFoto {
+      height: 421px;
+      width: 634px; }
+  body main .todasEnAlquiler .descripcionAlquiler3 {
+    grid-area: descripcionAlquiler3;
+    font-size: 20px;
+    border: 2px solid black;
+    border-left: none; }
+    body main .todasEnAlquiler .descripcionAlquiler3 .textoAlquiler3 {
+      padding: 30px; }
+    body main .todasEnAlquiler .descripcionAlquiler3 #botonDetallesAlquiler3 {
+      margin-left: 85%;
+      margin-top: 125px;
+      font-size: 20px; }
+
 /* GALERÍA */
-.contenedorFotos {
+body main div h2 {
+  text-align: center;
+  background-color: white;
+  color: black;
+  font-style: italic;
+  font-family: 'MonteCarlo', cursive;
+  font-size: 4rem; }
+
+body main .contenedorFotos {
   display: flex;
   flex-flow: row wrap; }
+  body main .contenedorFotos #galeriaPrimera {
+    width: 875px; }
+  body main .contenedorFotos #img-8 {
+    width: 600px; }
+  body main .contenedorFotos #img-12 {
+    width: 600px; }
 
-#galeriaPrimera {
-  width: 850px; }
+body main div h2 {
+  font-size: 3rem;
+  font-style: italic;
+  text-align: center;
+  font-family: 'MonteCarlo', cursive; }
 
-#img-8 {
-  width: 600px; }
+body main form {
+  border: 2px solid black;
+  border-radius: 30px;
+  text-align: center;
+  display: inline-block;
+  margin-left: 10%; }
+  body main form legend, body main form label {
+    font-size: 28px;
+    text-decoration: underline;
+    text-align: center;
+    padding: 50px;
+    padding-bottom: 10px; }
+  body main form span {
+    display: block;
+    padding-top: 30px; }
+    body main form span label {
+      font-size: 22px;
+      font-weight: bold;
+      text-align: center; }
+    body main form span input {
+      margin-left: 10px;
+      font-size: 20px; }
+    body main form span textarea {
+      font-size: 20px;
+      margin-left: 300px;
+      margin-bottom: 30px; }
+    body main form span .miBoton {
+      margin-left: 100px;
+      margin-bottom: 30px;
+      background-color: #bae8e8;
+      padding: 10px;
+      border: 2px solid black;
+      border-radius: 30px; }
+    body main form span .botonRestablecer {
+      margin-left: 10px;
+      margin-right: 30px;
+      margin-bottom: 30px;
+      background-color: #bae8e8;
+      padding: 10px;
+      border: 2px solid black;
+      border-radius: 30px; }
 
-#img-12 {
-  width: 600px; }
+/*MAP*/
+.introduccion {
+  color: blue; }
+
+.quienesSomos {
+  color: green; }
+
+/*MAP GET*/
+.subtitulo {
+  background-color: green;
+  font-size: 32px; }
+
+/*EXTEND*/
+legend, label {
+  color: red;
+  font-size: 20px; }
+
+label {
+  font-weight: lighter; }
+
+/*MIXIN CON PARAMETROS*/
+.nombreMarcas {
+  color: red;
+  font-weight: bolder; }

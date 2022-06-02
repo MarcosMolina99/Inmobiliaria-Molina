@@ -1,0 +1,35 @@
+/*MAP*/
+$mapTitulos:(introduccion:blue, quienesSomos:green);
+@each $texto,$color in $mapTitulos{
+    .#{$texto}{
+        color: $color;
+    }
+}
+
+/*MAP GET*/
+$style:(color:green, fuente:32px);
+
+.subtitulo{
+    background-color: map-get($style,color);
+    font-size: map-get($style,fuente);
+}
+
+/*EXTEND*/
+legend{
+    color: red;
+    font-size: 20px;
+}
+label{
+    @extend legend;
+    font-weight: lighter;
+}
+
+/*MIXIN CON PARAMETROS*/
+@mixin marcas($color,$peso) {
+    color: $color;
+    font-weight: $peso;
+    
+}
+.nombreMarcas{
+    @include marcas(red,bolder);
+}

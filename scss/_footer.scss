@@ -1,0 +1,37 @@
+.pieDePagina{
+    /* FONDO DEL FOOTER Y DISPLAY */
+    font-size: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(70,186,242);
+    background: linear-gradient(90deg, rgba(70,186,242,1) 0%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 46%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 48%, rgba(255,255,255,1) 49%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 52%, rgba(255,255,255,1) 53%, rgba(255,255,255,1) 54%, rgba(255,255,255,1) 55%, rgba(255,255,255,1) 56%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 58%, rgba(255,255,255,1) 59%, rgba(255,255,255,1) 60%, rgba(70,186,242,1) 100%);
+
+    .miMapa{
+        margin-top: 50px;
+    }
+    ul{
+        li{
+            .linkFooter{
+                text-decoration: none;
+                word-spacing: normal;
+                font-size: 26px;
+            }
+        }    
+
+    }
+
+    div{
+        .redSocial{
+            width: 50px;
+            margin-left: 30px;
+        }
+    }
+
+}
+
+
+

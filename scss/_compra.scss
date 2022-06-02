@@ -1,0 +1,109 @@
+
+body{
+    main{
+        .todasEnCompra{
+            display: grid;
+            grid-template-rows: auto auto auto;
+            grid-template-columns: 1fr auto;
+            row-gap: 20px;
+            grid-template-areas:
+            "foto1 descripcion1"
+            "foto2 descripcion2"
+            "foto3 descripcion3";
+
+            .fotoCasa1{
+                grid-area: foto1;
+                border: 2px solid black;
+                height: 426px;
+
+                .primeraFoto{
+                    height: 422px;
+                    width: 646px;
+                }
+            }
+            .descripcionCasa1{
+                font-size: 20px;
+                text-align: left;
+                grid-area: descripcion1;
+                border: 2px solid black;
+                border-left: none;
+                height: 426px;
+
+                .textoCasa1{
+                    padding: 30px;
+
+                }
+
+                #botonDetalles{
+                    margin-left: 85%;
+                    margin-top: 140px;
+                    font-size: 20px;
+                }
+            }
+
+            .fotoCasa2{
+                grid-area: foto2;
+                border: 2px solid black;
+                height: 363px;
+
+                .segundaFoto{
+                    height: 359px;
+                    width: 646px;
+                }
+            }
+
+            .descripcionCasa2{
+                font-size: 20px;
+                text-align: left;
+                grid-area: descripcion2;
+                border: 2px solid black;
+                border-left: none;
+
+                .textoCasa2{
+                    padding: 30px;
+                }
+
+                #botonDetalles2{
+                    margin-left: 85%;
+                    margin-top: 50px;
+                    font-size: 20px;
+                }
+            }
+
+            .fotoCasa3{
+                grid-area: foto3;
+                width: 650px;
+                border: 2px solid black;
+                height: 420px;
+                
+                .terceraFoto{
+                    width: 646px;
+                }
+
+            }
+
+            .descripcionCasa3{
+                font-size: 20px;
+                text-align: left;
+                grid-area: descripcion3;
+                border: 2px solid black;
+                border-left: none;
+                height: 420px;
+
+                .textoCasa3{
+                    padding: 30px;
+                }
+
+                #botonDetalles3{
+                    margin-left: 85%;
+                    margin-top: 80px;
+                    font-size: 20px;
+                }
+
+            }
+        }
+    }
+}
+
+/* /COMPRA */
+

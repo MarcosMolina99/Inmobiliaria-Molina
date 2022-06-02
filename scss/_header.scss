@@ -1,0 +1,67 @@
+
+body{
+    header{
+        nav{
+            .divLogo{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+
+                img{
+                    height: 150px;
+                    margin: 20px;
+                }
+
+                h1{
+                    /* TAMAÑO DE LA LETRA, ESTILO Y ALINEACION DEL ENCABEZADI */
+                    font-size: 5rem;
+                    font-style: italic;
+                    text-align: center;
+                    font-family: 'MonteCarlo', cursive;
+                    /* background-color: #007cb9; */
+                    /* background: rgb(9,181,217);
+                    background: linear-gradient(0deg, rgba(9,181,217,1) 0%, rgba(0,124,185,1) 100%); */
+                    background: rgb(70,186,242);
+                    background: radial-gradient(circle, rgba(70,186,242,1) 0%, rgba(255,255,255,1) 85%);
+                    /* border: 2px solid black; */
+                    margin-left: 20%;
+                }
+            }
+            ul{
+                /* ESPACIADO ENTRE PALABRAS */
+                word-spacing: 20px;
+                list-style: none;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-end;
+                margin-top: 20px;
+
+                .item{
+                    /* BOX MODELING: BORDES Y DISPLAY */
+                    /* MODIFICACIONES TEXTO: ESTILO, WEIGHT, TAMAÑO */
+                    /* BACKGROUND: COLOR DE FONDO */
+                    font-weight: bolder;
+                    font-style: oblique;
+                    border: 2px solid black;
+                    border-radius: 4rem;
+                    font-size: 24px;
+                    background-color: #bae8e8;
+                    margin-right: 30px;
+                    padding: 10px;
+                    text-align: center;
+                    transition: all 2s;
+
+                    &:hover{
+                        background-color: #3baea0;
+                        width: 130px;
+                    }
+
+                    .ancla{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

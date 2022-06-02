@@ -1,14 +1,35 @@
 /* GALERÍA */
-.contenedorFotos{
-    display: flex;
-    flex-flow: row wrap;
+body main{
+    div{
+        h2{
+            text-align: center;
+            background-color: white;
+            color: black;
+            font-style: italic;
+            font-family: 'MonteCarlo', cursive;
+            font-size: 4rem;
+        }
+    }
+    .contenedorFotos{
+        display: flex;
+        flex-flow: row wrap;
+        
+
+        #galeriaPrimera{
+            width: 875px;
+        }
+
+        #img-8{
+            width: 600px;
+        }
+
+        #img-12{
+            width: 600px;
+        }
+
+
+    }
 }
-#galeriaPrimera{
-    width: 850px;
-}
-#img-8{
-    width: 600px;
-}
-#img-12{
-    width: 600px;
-}
+
+
+
