@@ -9,7 +9,9 @@ body{
             grid-template-areas:
             "fotoAlquiler1 descripcionAlquiler1"
             "fotoAlquiler2 descripcionAlquiler2"
-            "fotoAlquiler3 descripcionAlquiler3";
+            "fotoAlquiler3 descripcionAlquiler3"
+            "fotoAlquiler4 descripcionAlquiler4"
+            "fotoAlquiler5 descripcionAlquiler5";
 
             .fotoAlquiler1{
                 grid-area: fotoAlquiler1;
@@ -93,6 +95,61 @@ body{
                     font-size: 20px;
                 }
 
+            }
+            .fotoAlquiler4{
+                grid-area: fotoAlquiler4;
+                border: 2px solid black;
+                height: 360px;
+
+                .cuartaFoto{
+                    height: 356px;
+                    width: 634px;
+                }
+            }
+
+            .descripcionAlquiler4{
+                grid-area: descripcionAlquiler4;
+                font-size: 20px;
+                border: 2px solid black;
+                border-left: none;
+
+                .textoAlquiler4{
+                    padding: 30px;
+                }
+
+                #botonDetallesAlquiler4{
+                    margin-left: 85%;
+                    margin-top: 80px;
+                    font-size: 20px;
+                }
+            }
+
+            .fotoAlquiler5{
+                grid-area: fotoAlquiler5;
+                border: 2px solid black;
+                height: 360px;
+
+                .quintaFoto{
+                    height: 356px;
+                    width: 634px;
+                }
+            }
+
+            .descripcionAlquiler5{
+                grid-area: descripcionAlquiler5;
+                font-size: 20px;
+                border: 2px solid black;
+                border-left: none;
+
+                .textoAlquiler5{
+                    padding: 30px;
+                }
+
+                #botonDetallesAlquiler5{
+                    margin-left: 85%;
+                    margin-top: 80px;
+                    font-size: 20px;
+                }
             }
         }
     }

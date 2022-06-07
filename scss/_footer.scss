@@ -33,5 +33,20 @@
 
 }
 
+@media(max-width: 375px) and (max-height: 812px){
+    body{
+        .pieDePagina{
+            .miMapa{
+                margin-left: 0%;
 
+                iframe{
+                    width: 350px;
+                }
+            }
+        }
+        div{
+            margin-bottom: 20px;
+        }
+    }
+}
 
