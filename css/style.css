@@ -14,12 +14,8 @@ body header nav .divLogo {
     font-style: italic;
     text-align: center;
     font-family: 'MonteCarlo', cursive;
-    /* background-color: #007cb9; */
-    /* background: rgb(9,181,217);
-                    background: linear-gradient(0deg, rgba(9,181,217,1) 0%, rgba(0,124,185,1) 100%); */
     background: #46baf2;
     background: radial-gradient(circle, #46baf2 0%, white 85%);
-    /* border: 2px solid black; */
     margin-left: 20%; }
 
 body header nav ul {
@@ -82,13 +78,15 @@ body header nav ul {
   justify-content: space-around;
   align-items: center;
   background: #46baf2;
-  background: linear-gradient(90deg, #46baf2 0%, white 45%, white 46%, white 47%, white 48%, white 49%, white 50%, white 51%, white 52%, white 53%, white 54%, white 55%, white 56%, white 57%, white 58%, white 59%, white 60%, #46baf2 100%); }
+  border: 2px solid black; }
   .pieDePagina .miMapa {
     margin-top: 50px; }
-  .pieDePagina ul li .linkFooter {
-    text-decoration: none;
-    word-spacing: normal;
-    font-size: 26px; }
+  .pieDePagina ul {
+    list-style: none; }
+    .pieDePagina ul li .linkFooter {
+      text-decoration: none;
+      word-spacing: normal;
+      font-size: 26px; }
   .pieDePagina div .redSocial {
     width: 50px;
     margin-left: 30px; }
@@ -103,25 +101,25 @@ body header nav ul {
 
 body main .fondoPrincipal .tituloCarousel {
   margin-top: 70px;
-  color: #0092ca;
   font-style: italic;
   text-align: center; }
 
-body main #carouselExampleControls .carouselInner div #fotoCarrousel {
-  width: 200px; }
+body main #carouselExampleControls {
+  width: 1250px;
+  margin-left: 350px; }
 
 body main section .introduccion {
   text-align: center;
   font-size: 22px;
   margin-top: 60px;
-  font-weight: bolder;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  font-weight: bold; }
 
 body main section .subtitulo {
   margin-top: 70px;
-  color: #0092ca;
   font-style: italic;
-  text-align: center; }
+  text-align: center;
+  background: white;
+  background: linear-gradient(90deg, white 40%, #46baf2 50%, white 60%); }
 
 body main section .quienesSomos {
   padding: 20px;
@@ -157,11 +155,7 @@ body main .todasEnCompra {
   grid-template-rows: auto auto auto;
   grid-template-columns: 1fr auto;
   row-gap: 20px;
-  grid-template-areas: "foto1 descripcion1"
- "foto2 descripcion2"
- "foto3 descripcion3"
- "foto4 descripcion4"
- "foto5 descripcion5"; }
+  grid-template-areas: "foto1 descripcion1" "foto2 descripcion2" "foto3 descripcion3" "foto4 descripcion4" "foto5 descripcion5"; }
   body main .todasEnCompra .fotoCasa1 {
     grid-area: foto1;
     border: 2px solid black;
@@ -173,15 +167,26 @@ body main .todasEnCompra {
     font-size: 20px;
     text-align: left;
     grid-area: descripcion1;
-    border: 2px solid black;
-    border-left: none;
-    height: 426px; }
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid black;
+    border-left: none; }
     body main .todasEnCompra .descripcionCasa1 .textoCasa1 {
       padding: 30px; }
+    body main .todasEnCompra .descripcionCasa1 #detallesCasaUno {
+      border-top: 1px solid black;
+      border-left: 2px solid black;
+      margin-top: 42px; }
     body main .todasEnCompra .descripcionCasa1 #botonDetalles {
-      margin-left: 85%;
+      margin-left: 80%;
       margin-top: 140px;
-      font-size: 20px; }
+      font-size: 20px;
+      color: green;
+      background-color: white;
+      border-color: green; }
+      body main .todasEnCompra .descripcionCasa1 #botonDetalles:hover {
+        background-color: green;
+        color: white; }
   body main .todasEnCompra .fotoCasa2 {
     grid-area: foto2;
     border: 2px solid black;
@@ -193,14 +198,26 @@ body main .todasEnCompra {
     font-size: 20px;
     text-align: left;
     grid-area: descripcion2;
-    border: 2px solid black;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid black;
     border-left: none; }
     body main .todasEnCompra .descripcionCasa2 .textoCasa2 {
       padding: 30px; }
+    body main .todasEnCompra .descripcionCasa2 #detallesCasaDos {
+      border-top: 1px solid black;
+      border-left: 2px solid black;
+      margin-top: 69px; }
     body main .todasEnCompra .descripcionCasa2 #botonDetalles2 {
-      margin-left: 85%;
+      margin-left: 80%;
       margin-top: 50px;
-      font-size: 20px; }
+      font-size: 20px;
+      color: green;
+      background-color: white;
+      border-color: green; }
+      body main .todasEnCompra .descripcionCasa2 #botonDetalles2:hover {
+        background-color: green;
+        color: white; }
   body main .todasEnCompra .fotoCasa3 {
     grid-area: foto3;
     width: 650px;
@@ -212,15 +229,29 @@ body main .todasEnCompra {
     font-size: 20px;
     text-align: left;
     grid-area: descripcion3;
-    border: 2px solid black;
-    border-left: none;
-    height: 420px; }
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid black;
+    border-left: none; }
     body main .todasEnCompra .descripcionCasa3 .textoCasa3 {
       padding: 30px; }
+    body main .todasEnCompra .descripcionCasa3 #detallesCasaTres {
+      border-top: 1px solid black;
+      border-left: 2px solid black;
+      margin-top: 96px;
+      margin-left: 0px; }
+      body main .todasEnCompra .descripcionCasa3 #detallesCasaTres .col {
+        padding-left: 0%; }
     body main .todasEnCompra .descripcionCasa3 #botonDetalles3 {
-      margin-left: 85%;
+      margin-left: 80%;
       margin-top: 80px;
-      font-size: 20px; }
+      font-size: 20px;
+      color: green;
+      background-color: white;
+      border-color: green; }
+      body main .todasEnCompra .descripcionCasa3 #botonDetalles3:hover {
+        background-color: green;
+        color: white; }
   body main .todasEnCompra .fotoCasa4 {
     grid-area: foto4;
     width: 650px;
@@ -233,15 +264,29 @@ body main .todasEnCompra {
     font-size: 20px;
     text-align: left;
     grid-area: descripcion4;
-    border: 2px solid black;
-    border-left: none;
-    height: 420px; }
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid black;
+    border-left: none; }
     body main .todasEnCompra .descripcionCasa4 .textoCasa4 {
       padding: 30px; }
+    body main .todasEnCompra .descripcionCasa4 #detallesCasaCuatro {
+      border-top: 1px solid black;
+      border-left: 2px solid black;
+      margin-top: 96px;
+      margin-left: 0px; }
+      body main .todasEnCompra .descripcionCasa4 #detallesCasaCuatro .col {
+        padding-left: 0px; }
     body main .todasEnCompra .descripcionCasa4 #botonDetalles4 {
-      margin-left: 85%;
+      margin-left: 80%;
       margin-top: 80px;
-      font-size: 20px; }
+      font-size: 20px;
+      color: green;
+      background-color: white;
+      border-color: green; }
+      body main .todasEnCompra .descripcionCasa4 #botonDetalles4:hover {
+        background-color: green;
+        color: white; }
   body main .todasEnCompra .fotoCasa5 {
     grid-area: foto5;
     width: 650px;
@@ -254,15 +299,29 @@ body main .todasEnCompra {
     font-size: 20px;
     text-align: left;
     grid-area: descripcion5;
-    border: 2px solid black;
-    border-left: none;
-    height: 420px; }
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 1px solid black;
+    border-left: none; }
     body main .todasEnCompra .descripcionCasa5 .textoCasa5 {
       padding: 30px; }
+    body main .todasEnCompra .descripcionCasa5 #detallesCasaCinco {
+      border-top: 1px solid black;
+      border-left: 2px solid black;
+      margin-top: 96px;
+      margin-left: 0%; }
+      body main .todasEnCompra .descripcionCasa5 #detallesCasaCinco .col {
+        padding: 0%; }
     body main .todasEnCompra .descripcionCasa5 #botonDetalles5 {
-      margin-left: 85%;
+      margin-left: 80%;
       margin-top: 80px;
-      font-size: 20px; }
+      font-size: 20px;
+      color: green;
+      background-color: white;
+      border-color: green; }
+      body main .todasEnCompra .descripcionCasa5 #botonDetalles5:hover {
+        background-color: green;
+        color: white; }
 
 /* /COMPRA */
 /* ALQUILER */
@@ -271,11 +330,7 @@ body main .todasEnAlquiler {
   grid-template-rows: auto auto auto;
   grid-template-columns: 1fr auto;
   row-gap: 20px;
-  grid-template-areas: "fotoAlquiler1 descripcionAlquiler1"
- "fotoAlquiler2 descripcionAlquiler2"
- "fotoAlquiler3 descripcionAlquiler3"
- "fotoAlquiler4 descripcionAlquiler4"
- "fotoAlquiler5 descripcionAlquiler5"; }
+  grid-template-areas: "fotoAlquiler1 descripcionAlquiler1" "fotoAlquiler2 descripcionAlquiler2" "fotoAlquiler3 descripcionAlquiler3" "fotoAlquiler4 descripcionAlquiler4" "fotoAlquiler5 descripcionAlquiler5"; }
   body main .todasEnAlquiler .fotoAlquiler1 {
     grid-area: fotoAlquiler1;
     border: 2px solid black;
@@ -285,14 +340,26 @@ body main .todasEnAlquiler {
   body main .todasEnAlquiler .descripcionAlquiler1 {
     grid-area: descripcionAlquiler1;
     font-size: 20px;
-    border: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 1px solid black;
     border-left: none; }
     body main .todasEnAlquiler .descripcionAlquiler1 .textoAlquiler1 {
       padding: 30px; }
+    body main .todasEnAlquiler .descripcionAlquiler1 #detallesAlquilerUno {
+      border-top: 1px solid black;
+      border-left: 2px solid black;
+      margin-top: 62px; }
     body main .todasEnAlquiler .descripcionAlquiler1 #botonDetallesAlquiler1 {
       margin-left: 85%;
       margin-top: 120px;
-      font-size: 20px; }
+      font-size: 20px;
+      color: green;
+      background-color: white;
+      border-color: green; }
+      body main .todasEnAlquiler .descripcionAlquiler1 #botonDetallesAlquiler1:hover {
+        background-color: green;
+        color: white; }
   body main .todasEnAlquiler .fotoAlquiler2 {
     grid-area: fotoAlquiler2;
     border: 2px solid black;
@@ -303,14 +370,26 @@ body main .todasEnAlquiler {
   body main .todasEnAlquiler .descripcionAlquiler2 {
     grid-area: descripcionAlquiler2;
     font-size: 20px;
-    border: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 1px solid black;
     border-left: none; }
     body main .todasEnAlquiler .descripcionAlquiler2 .textoAlquiler2 {
       padding: 30px; }
+    body main .todasEnAlquiler .descripcionAlquiler2 #detallesAlquilerDos {
+      border-top: 1px solid black;
+      border-left: 2px solid black;
+      margin-top: 36px; }
     body main .todasEnAlquiler .descripcionAlquiler2 #botonDetallesAlquiler2 {
       margin-left: 85%;
       margin-top: 80px;
-      font-size: 20px; }
+      font-size: 20px;
+      color: green;
+      background-color: white;
+      border-color: green; }
+      body main .todasEnAlquiler .descripcionAlquiler2 #botonDetallesAlquiler2:hover {
+        background-color: green;
+        color: white; }
   body main .todasEnAlquiler .fotoAlquiler3 {
     grid-area: fotoAlquiler3;
     border: 2px solid black;
@@ -321,14 +400,26 @@ body main .todasEnAlquiler {
   body main .todasEnAlquiler .descripcionAlquiler3 {
     grid-area: descripcionAlquiler3;
     font-size: 20px;
-    border: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 1px solid black;
     border-left: none; }
     body main .todasEnAlquiler .descripcionAlquiler3 .textoAlquiler3 {
       padding: 30px; }
+    body main .todasEnAlquiler .descripcionAlquiler3 #detallesAlquilerTres {
+      border-top: 1px solid black;
+      border-left: 2px solid black;
+      margin-top: 56px; }
     body main .todasEnAlquiler .descripcionAlquiler3 #botonDetallesAlquiler3 {
       margin-left: 85%;
       margin-top: 125px;
-      font-size: 20px; }
+      font-size: 20px;
+      color: green;
+      background-color: white;
+      border-color: green; }
+      body main .todasEnAlquiler .descripcionAlquiler3 #botonDetallesAlquiler3:hover {
+        background-color: green;
+        color: white; }
   body main .todasEnAlquiler .fotoAlquiler4 {
     grid-area: fotoAlquiler4;
     border: 2px solid black;
@@ -339,14 +430,26 @@ body main .todasEnAlquiler {
   body main .todasEnAlquiler .descripcionAlquiler4 {
     grid-area: descripcionAlquiler4;
     font-size: 20px;
-    border: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 1px solid black;
     border-left: none; }
     body main .todasEnAlquiler .descripcionAlquiler4 .textoAlquiler4 {
       padding: 30px; }
+    body main .todasEnAlquiler .descripcionAlquiler4 #detallesAlquilerCuatro {
+      border-top: 1px solid black;
+      border-left: 2px solid black;
+      margin-top: 36px; }
     body main .todasEnAlquiler .descripcionAlquiler4 #botonDetallesAlquiler4 {
       margin-left: 85%;
       margin-top: 80px;
-      font-size: 20px; }
+      font-size: 20px;
+      color: green;
+      background-color: white;
+      border-color: green; }
+      body main .todasEnAlquiler .descripcionAlquiler4 #botonDetallesAlquiler4:hover {
+        background-color: green;
+        color: white; }
   body main .todasEnAlquiler .fotoAlquiler5 {
     grid-area: fotoAlquiler5;
     border: 2px solid black;
@@ -357,14 +460,26 @@ body main .todasEnAlquiler {
   body main .todasEnAlquiler .descripcionAlquiler5 {
     grid-area: descripcionAlquiler5;
     font-size: 20px;
-    border: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 1px solid black;
     border-left: none; }
     body main .todasEnAlquiler .descripcionAlquiler5 .textoAlquiler5 {
       padding: 30px; }
+    body main .todasEnAlquiler .descripcionAlquiler5 #detallesAlquilerCinco {
+      border-top: 1px solid black;
+      border-left: 2px solid black;
+      margin-top: 36px; }
     body main .todasEnAlquiler .descripcionAlquiler5 #botonDetallesAlquiler5 {
       margin-left: 85%;
       margin-top: 80px;
-      font-size: 20px; }
+      font-size: 20px;
+      color: green;
+      background-color: white;
+      border-color: green; }
+      body main .todasEnAlquiler .descripcionAlquiler5 #botonDetallesAlquiler5:hover {
+        background-color: green;
+        color: white; }
 
 /* GALERÍA */
 body main div h2 {
@@ -397,10 +512,10 @@ body main form {
   text-align: center;
   display: inline-block;
   margin-left: 22%; }
-  body main form legend, body main form label {
-    font-size: 28px;
-    text-decoration: underline;
+  body main form legend {
+    font-size: 3rem;
     text-align: center;
+    font-family: 'MonteCarlo', cursive;
     padding: 50px;
     padding-bottom: 10px; }
   body main form span {
@@ -439,9 +554,7 @@ body main form {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
-    grid-template-areas: "header"
- "main"
- "footer"; }
+    grid-template-areas: "header" "main" "footer"; }
   header {
     grid-area: header; }
   main {
@@ -503,20 +616,10 @@ body main form {
 @media (min-width: 400px) and (max-width: 768px) and (max-height: 1024px) {
   body main .todasEnCompra {
     display: grid;
-    grid-template-rows: auto auto auto auto
- auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
     row-gap: 0;
     grid-template-columns: 768px;
-    grid-template-areas: "foto1"
- "descripcion1"
- "foto2"
- "descripcion2"
- "foto3"
- "descripcion3"
- "foto4"
- "descripcion4"
- "foto5"
- "descripcion5"; }
+    grid-template-areas: "foto1" "descripcion1" "foto2" "descripcion2" "foto3" "descripcion3" "foto4" "descripcion4" "foto5" "descripcion5"; }
     body main .todasEnCompra .fotoCasa1 {
       grid-area: foto1;
       margin-top: 10px;
@@ -648,20 +751,10 @@ body main form {
 @media (min-width: 400px) and (max-width: 768px) and (max-height: 1024px) {
   body main .todasEnAlquiler {
     display: grid;
-    grid-template-rows: auto auto auto auto
- auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
     row-gap: 0;
     grid-template-columns: 768px;
-    grid-template-areas: "fotoAlquiler1"
- "descripcionAlquiler1"
- "fotoAlquiler2"
- "descripcionAlquiler2"
- "fotoAlquiler3"
- "descripcionAlquiler3"
- "fotoAlquiler4"
- "descripcionAlquiler4"
- "fotoAlquiler5"
- "descripcionAlquiler5"; }
+    grid-template-areas: "fotoAlquiler1" "descripcionAlquiler1" "fotoAlquiler2" "descripcionAlquiler2" "fotoAlquiler3" "descripcionAlquiler3" "fotoAlquiler4" "descripcionAlquiler4" "fotoAlquiler5" "descripcionAlquiler5"; }
     body main .todasEnAlquiler .fotoAlquiler1 {
       grid-area: fotoAlquiler1;
       margin-top: 10px;
@@ -795,9 +888,7 @@ body main form {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
-    grid-template-areas: "header"
- "main"
- "footer"; }
+    grid-template-areas: "header" "main" "footer"; }
     .contenedorPadre header {
       grid-area: header; }
     .contenedorPadre main {
@@ -842,7 +933,7 @@ body main form {
     body #formMain form {
       width: 350px;
       margin-left: 0px; }
-      body #formMain form legend, body #formMain form label {
+      body #formMain form legend {
         font-size: 15px; }
       body #formMain form span textarea {
         margin-left: 0%; }
@@ -859,20 +950,10 @@ body main form {
       body main .todasEnAlquiler {
         margin-left: 0%;
         display: grid;
-        grid-template-rows: auto auto auto auto
- auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
         row-gap: 0;
         grid-template-columns: 375px;
-        grid-template-areas: "fotoAlquiler1"
- "descripcionAlquiler1"
- "fotoAlquiler2"
- "descripcionAlquiler2"
- "fotoAlquiler3"
- "descripcionAlquiler3"
- "fotoAlquiler4"
- "descripcionAlquiler4"
- "fotoAlquiler5"
- "descripcionAlquiler5"; }
+        grid-template-areas: "fotoAlquiler1" "descripcionAlquiler1" "fotoAlquiler2" "descripcionAlquiler2" "fotoAlquiler3" "descripcionAlquiler3" "fotoAlquiler4" "descripcionAlquiler4" "fotoAlquiler5" "descripcionAlquiler5"; }
         body main .todasEnAlquiler .fotoAlquiler1 {
           grid-area: fotoAlquiler1;
           margin-top: 10px;
@@ -1019,20 +1100,10 @@ body main form {
 @media (max-width: 375px) and (max-height: 812px) {
   body main .todasEnCompra {
     display: grid;
-    grid-template-rows: auto auto auto auto
- auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
     row-gap: 0;
     grid-template-columns: 768px;
-    grid-template-areas: "foto1"
- "descripcion1"
- "foto2"
- "descripcion2"
- "foto3"
- "descripcion3"
- "foto4"
- "descripcion4"
- "foto5"
- "descripcion5"; }
+    grid-template-areas: "foto1" "descripcion1" "foto2" "descripcion2" "foto3" "descripcion3" "foto4" "descripcion4" "foto5" "descripcion5"; }
     body main .todasEnCompra .fotoCasa1 {
       grid-area: foto1;
       margin-top: 10px;

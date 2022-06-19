@@ -25,17 +25,33 @@ body{
             .descripcionAlquiler1{
                 grid-area: descripcionAlquiler1;
                 font-size: 20px;
-                border: 2px solid black;
+                border-right: 2px solid black;
+                border-top: 2px solid black;
+                border-bottom: 1px solid black;
                 border-left: none;
 
                 .textoAlquiler1{
                     padding: 30px;
                 }
 
+                #detallesAlquilerUno{
+                    border-top: 1px solid black;
+                    border-left: 2px solid black;
+                    margin-top: 62px;
+                }
+
                 #botonDetallesAlquiler1{
                     margin-left: 85%;
                     margin-top: 120px;
                     font-size: 20px;
+                    color: green;
+                    background-color: white;
+                    border-color: green;
+
+                    &:hover{
+                        background-color: green;
+                        color: white;
+                    }
                 }
             }
 
@@ -53,17 +69,33 @@ body{
             .descripcionAlquiler2{
                 grid-area: descripcionAlquiler2;
                 font-size: 20px;
-                border: 2px solid black;
+                border-right: 2px solid black;
+                border-top: 2px solid black;
+                border-bottom: 1px solid black;
                 border-left: none;
 
                 .textoAlquiler2{
                     padding: 30px;
                 }
 
+                #detallesAlquilerDos{
+                    border-top: 1px solid black;
+                    border-left: 2px solid black;
+                    margin-top: 36px;
+                }
+
                 #botonDetallesAlquiler2{
                     margin-left: 85%;
                     margin-top: 80px;
                     font-size: 20px;
+                    color: green;
+                    background-color: white;
+                    border-color: green;
+
+                    &:hover{
+                        background-color: green;
+                        color: white;
+                    }
                 }
             }
 
@@ -82,17 +114,33 @@ body{
             .descripcionAlquiler3{
                 grid-area: descripcionAlquiler3;
                 font-size: 20px;
-                border: 2px solid black;
+                border-right: 2px solid black;
+                border-top: 2px solid black;
+                border-bottom: 1px solid black;
                 border-left: none;
 
                 .textoAlquiler3{
                     padding: 30px;
                 }
 
+                #detallesAlquilerTres{
+                    border-top: 1px solid black;
+                    border-left: 2px solid black;
+                    margin-top: 56px;
+                }
+
                 #botonDetallesAlquiler3{
                     margin-left: 85%;
                     margin-top: 125px;
                     font-size: 20px;
+                    color: green;
+                    background-color: white;
+                    border-color: green;
+
+                    &:hover{
+                        background-color: green;
+                        color: white;
+                    }
                 }
 
             }
@@ -110,17 +158,33 @@ body{
             .descripcionAlquiler4{
                 grid-area: descripcionAlquiler4;
                 font-size: 20px;
-                border: 2px solid black;
+                border-right: 2px solid black;
+                border-top: 2px solid black;
+                border-bottom: 1px solid black;
                 border-left: none;
 
                 .textoAlquiler4{
                     padding: 30px;
                 }
 
+                #detallesAlquilerCuatro{
+                    border-top: 1px solid black;
+                    border-left: 2px solid black;
+                    margin-top: 36px;
+                }
+
                 #botonDetallesAlquiler4{
                     margin-left: 85%;
                     margin-top: 80px;
                     font-size: 20px;
+                    color: green;
+                    background-color: white;
+                    border-color: green;
+
+                    &:hover{
+                        background-color: green;
+                        color: white;
+                    }
                 }
             }
 
@@ -138,17 +202,33 @@ body{
             .descripcionAlquiler5{
                 grid-area: descripcionAlquiler5;
                 font-size: 20px;
-                border: 2px solid black;
+                border-right: 2px solid black;
+                border-top: 2px solid black;
+                border-bottom: 1px solid black;
                 border-left: none;
 
                 .textoAlquiler5{
                     padding: 30px;
                 }
 
+                #detallesAlquilerCinco{
+                    border-top: 1px solid black;
+                    border-left: 2px solid black;
+                    margin-top: 36px;
+                }
+
                 #botonDetallesAlquiler5{
                     margin-left: 85%;
                     margin-top: 80px;
                     font-size: 20px;
+                    color: green;
+                    background-color: white;
+                    border-color: green;
+
+                    &:hover{
+                        background-color: green;
+                        color: white;
+                    }
                 }
             }
         }

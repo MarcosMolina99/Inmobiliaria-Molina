@@ -27,19 +27,34 @@ body{
                 font-size: 20px;
                 text-align: left;
                 grid-area: descripcion1;
-                border: 2px solid black;
+                border-top: 2px solid black;
+                border-right: 2px solid black;
+                border-bottom: 1px solid black;
                 border-left: none;
-                height: 426px;
 
                 .textoCasa1{
                     padding: 30px;
 
                 }
 
+                #detallesCasaUno{
+                    border-top: 1px solid black;
+                    border-left: 2px solid black;
+                    margin-top: 42px;
+                }
+
                 #botonDetalles{
-                    margin-left: 85%;
+                    margin-left: 80%;
                     margin-top: 140px;
                     font-size: 20px;
+                    color: green;
+                    background-color: white;
+                    border-color: green;
+
+                    &:hover{
+                        background-color: green;
+                        color: white;
+                    }
                 }
             }
 
@@ -58,17 +73,33 @@ body{
                 font-size: 20px;
                 text-align: left;
                 grid-area: descripcion2;
-                border: 2px solid black;
+                border-top: 2px solid black;
+                border-right: 2px solid black;
+                border-bottom: 1px solid black;
                 border-left: none;
 
                 .textoCasa2{
                     padding: 30px;
                 }
 
+                #detallesCasaDos{
+                    border-top: 1px solid black;
+                    border-left: 2px solid black;
+                    margin-top: 69px;
+                }
+
                 #botonDetalles2{
-                    margin-left: 85%;
+                    margin-left: 80%;
                     margin-top: 50px;
                     font-size: 20px;
+                    color: green;
+                    background-color: white;
+                    border-color: green;
+
+                    &:hover{
+                        background-color: green;
+                        color: white;
+                    }
                 }
             }
 
@@ -88,18 +119,38 @@ body{
                 font-size: 20px;
                 text-align: left;
                 grid-area: descripcion3;
-                border: 2px solid black;
+                border-top: 2px solid black;
+                border-right: 2px solid black;
+                border-bottom: 1px solid black;
                 border-left: none;
-                height: 420px;
 
                 .textoCasa3{
                     padding: 30px;
                 }
 
+                #detallesCasaTres{
+                    border-top: 1px solid black;
+                    border-left: 2px solid black;
+                    margin-top: 96px;
+                    margin-left: 0px;
+
+                    .col{
+                        padding-left: 0%;
+                    }
+                }
+
                 #botonDetalles3{
-                    margin-left: 85%;
+                    margin-left: 80%;
                     margin-top: 80px;
                     font-size: 20px;
+                    color: green;
+                    background-color: white;
+                    border-color: green;
+
+                    &:hover{
+                        background-color: green;
+                        color: white;
+                    }
                 }
 
             }
@@ -118,18 +169,38 @@ body{
                 font-size: 20px;
                 text-align: left;
                 grid-area: descripcion4;
-                border: 2px solid black;
+                border-top: 2px solid black;
+                border-right: 2px solid black;
+                border-bottom: 1px solid black;
                 border-left: none;
-                height: 420px;
 
                 .textoCasa4{
                     padding: 30px;
                 }
 
+                #detallesCasaCuatro{
+                    border-top: 1px solid black;
+                    border-left: 2px solid black;
+                    margin-top: 96px;
+                    margin-left: 0px;
+
+                    .col{
+                        padding-left: 0px;
+                    }
+                }
+
                 #botonDetalles4{
-                    margin-left: 85%;
+                    margin-left: 80%;
                     margin-top: 80px;
                     font-size: 20px;
+                    color: green;
+                    background-color: white;
+                    border-color: green;
+
+                    &:hover{
+                        background-color: green;
+                        color: white;
+                    }
                 }
             }
 
@@ -150,18 +221,38 @@ body{
                 font-size: 20px;
                 text-align: left;
                 grid-area: descripcion5;
-                border: 2px solid black;
+                border-top: 2px solid black;
+                border-right: 2px solid black;
+                border-bottom: 1px solid black;
                 border-left: none;
-                height: 420px;
 
                 .textoCasa5{
                     padding: 30px;
                 }
 
+                #detallesCasaCinco{
+                    border-top: 1px solid black;
+                    border-left: 2px solid black;
+                    margin-top: 96px;
+                    margin-left: 0%;
+
+                    .col{
+                        padding: 0%;
+                    }
+                }
+
                 #botonDetalles5{
-                    margin-left: 85%;
+                    margin-left: 80%;
                     margin-top: 80px;
                     font-size: 20px;
+                    color: green;
+                    background-color: white;
+                    border-color: green;
+
+                    &:hover{
+                        background-color: green;
+                        color: white;
+                    }
                 }
             }
 
