@@ -1,4 +1,4 @@
-@media(max-width: 375px) and (max-height: 812px){
+@media(min-width: 300px) and (max-width: 767px) and (max-height: 812px){
     /*INDEX*/
     .contenedorPadre{
         display: grid;
@@ -13,29 +13,39 @@
         }
         main{
             grid-area: main;
-            width: 375px;
 
             .fondoPrincipal{
 
                 .tituloCarousel{
-                    font-size: 35px;
+                    font-size: 2rem;
+                    width: 300px;
+                }
+
+                #carouselExampleControls{
+                    width: 300px;
+                    margin: 0%;
                 }
 
                 section{
                     .introduccion{
-                        font-size: 20px;
+                        font-size: 17px;
+                        width: 300px;
                     }
                 }
 
                 section{
+                    .subtitulo{
+                        width: 300px;
+                    }
                     .quienesSomos{
                         text-align: center;
                         font-size: 20px;
+                        width: 300px;
                     }
                 }
 
                 .recomendacion{
-                    width: 375px;
+                    width: 300px;
                     margin: 0%;
                     
                     h3{
@@ -45,32 +55,42 @@
                 }
                 
                 .marcas{
-                        div{
-                            width: 150px;
-
-                            #seguridadInformatica{
-                                width: 70px;
-                                margin: 0%;
-                            }
-                            #ciberseguridad{
-                                font-size: 17px;
-                            }
+                    display: inline;
+                    div{
+                        width: 300px;
+                        #seguridadInformatica{
+                            width: 70px;
+                            margin-left: 120px;
                         }
-
-                        div{
-                            #pintureria{
-                                width: 70px;
-                            }
+                        #ciberseguridad{
+                            font-size: 17px;
+                            text-align: center;
+                            margin-left: 15px;
                         }
+                    }
 
-                        div{
-                            #ventanas{
-                                width: 70px;
-                            }
-                            #marcaVentanas{
-                                font-size: 17px;
-                            }
+                    div{
+                        #pintureria{
+                            width: 70px;
+                            margin-left: 125px;
                         }
+                        #descripcionPintureria{
+                            font-size: 17px;
+                            margin-left: 70px;
+                        }
+                    }
+
+                    div{
+                        #ventanas{
+                            width: 70px;
+                            margin-left: 120px;
+
+                        }
+                        #marcaVentanas{
+                            font-size: 17px;
+                            margin-left: 50px;
+                        }
+                    }
                 }
             }
         }
@@ -84,33 +104,49 @@
 /*/INDEX*/
 
 /*CONTACTO*/
-@media(max-width: 375px) and (max-height: 812px){
+@media(min-width: 300px) and (max-width: 767px) and (max-height: 812px){
     body{
+        width: 300px;
         #formMain{
-            width: 375px;
+            width: 300px;
 
             div{
-                h2{
+                .tituloFormulario{
                     font-size: 30px;
+                    width: 250px;
                 }
             }
 
             form{
-                width: 350px;
+                width: 275px;
                 margin-left: 0px;
 
                 legend{
-                    font-size: 15px;
+                    font-size: 27px;
                 }
 
 
                 span{
+                    label{
+                       font-size: 18px; 
+                    }
+                    
+
                     textarea{
+                        width: 225px;
                         margin-left: 0%;
+                        font-size: 18px;
                     }
 
-                    .botonRestablecer{
-                        margin-left: 5px;
+                    #botonEnviar{
+                        margin-top: 15px;
+                        margin-left: 0px;
+                        font-size: 18px;
+                    }
+
+                    #botonRestablecer{
+                        margin-left: 30px;
+                        font-size: 18px;
                     }
                 }
             }
@@ -121,20 +157,26 @@
 /*/CONTACTO*/
 
 /*ALQUILER*/
-@media(max-width: 375px) and (max-height: 812px){
+@media(min-width: 300px) and (max-width: 767px) and (max-height: 812px){
         body{
-            width: 375px;
+            width: 300px;
 
             main{
-                width: 375px;
+                div{
+                    h2{
+                        margin-top: 50px;
+                    }
+                }
+                width: 300px;
 
                 .todasEnAlquiler{
+                    width: 300px;
                     margin-left: 0%;
                     display: grid;
                     grid-template-rows: auto auto auto auto
                     auto auto auto auto auto auto;
                     row-gap: 0;
-                    grid-template-columns: 375px;
+                    grid-template-columns: 300px;
                     grid-template-areas: 
                     "fotoAlquiler1"
                     "descripcionAlquiler1"
@@ -152,35 +194,42 @@
                         margin-top: 10px;
                         margin-left: 0px;
                         margin-bottom: 0%;
-                        height: 400px;
-                        width: 375px;
+                        height: 200px;
+                        width: 300px;
                         border-bottom: none;
 
                         .primeraFoto{
-                            width: 371px;
+                            width: 296px;
+                            height: 250px;
                         }
 
                     }
                     .descripcionAlquiler1{
-                        width: 375px;
+                        width: 300px;
                         grid-area: descripcionAlquiler1;
                         border-top: none;
                         border-left: 2px solid black;
                         margin-left: 0px;
                         margin-top: 0%;
                         margin-bottom: 30px;
-                        padding-bottom: 30px;
-                        height: 650px;
                         
 
                         .textoAlquiler1{
                             border-top: none;
                             margin-top: 50px;
+                            font-size: 18px;
+                        }
+
+                        #detallesAlquilerUno{
+                            margin-top: 50px;
+                            border-left: none;
+                            font-size: 18px;
                         }
 
                         #botonDetallesAlquiler1{
                             margin-top: 0px;
-                            margin-left: 200px;
+                            margin-left: 150px;
+                            font-size: 18px;
                         }
                     }
                     
@@ -190,35 +239,42 @@
                         margin-top: 10px;
                         margin-left: 0px;
                         margin-bottom: 0%;
-                        height: 400px;
-                        width: 375px;
+                        height: 250px;
+                        width: 300px;
                         border-bottom: none;
 
                         .segundaFoto{
-                            width: 371px;
+                            width: 296px;
+                            height: 250px;
                         }
 
                     }
                     .descripcionAlquiler2{
-                        width: 375px;
+                        width: 300px;
                         grid-area: descripcionAlquiler2;
                         border-top: none;
                         border-left: 2px solid black;
                         margin-left: 0px;
                         margin-top: 0%;
                         margin-bottom: 30px;
-                        padding-bottom: 30px;
-                        height: 650px;
                         
 
                         .textoAlquiler2{
                             border-top: none;
                             margin-top: 10px;
+                            font-size: 18px;
+                        }
+
+                        #detallesAlquilerDos{
+                            margin-top: 50px;
+                            border-left: none;
+                            font-size: 18px;
                         }
 
                         #botonDetallesAlquiler2{
                             margin-top: 30px;
-                            margin-left: 200px;
+                            margin-left: 150px;
+                            font-size: 18px;
                         }
                     }
 
@@ -227,24 +283,23 @@
                         margin-top: 10px;
                         margin-left: 0px;
                         margin-bottom: 0%;
-                        height: 400px;
-                        width: 375px;
+                        height: 200px;
+                        width: 300px;
                         border-bottom: none;
 
                         .terceraFoto{
-                            width: 371px;
+                            width: 296px;
+                            height: 250px;
                         }
                     }
                     .descripcionAlquiler3{
-                        width: 375px;
+                        width: 300px;
                         grid-area: descripcionAlquiler3;
                         border-top: none;
                         border-left: 2px solid black;
                         margin-left: 0px;
                         margin-top: 0%;
                         margin-bottom: 30px;
-                        padding-bottom: 30px;
-                        height: 650px;
                         
 
                         .textoAlquiler3{
@@ -252,9 +307,16 @@
                             margin-top: 50px;
                         }
 
+                        #detallesAlquilerTres{
+                            margin-top: 50px;
+                            border-left: none;
+                            font-size: 18px;
+                        }
+
                         #botonDetallesAlquiler3{
                             margin-top: 0px;
-                            margin-left: 200px;
+                            margin-left: 150px;
+                            font-size: 18px;
                         }
                     }
 
@@ -263,35 +325,42 @@
                         margin-top: 10px;
                         margin-left: 0px;
                         margin-bottom: 0%;
-                        height: 400px;
-                        width: 375px;
+                        height: 250px;
+                        width: 300px;
                         border-bottom: none;
 
                         .cuartaFoto{
-                            width: 371px;
+                            width: 296px;
+                            height: 250px;
                         }
 
                     }
                     .descripcionAlquiler4{
-                        width: 375px;
+                        width: 300px;
                         grid-area: descripcionAlquiler4;
                         border-top: none;
                         border-left: 2px solid black;
                         margin-left: 0px;
                         margin-top: 0%;
                         margin-bottom: 30px;
-                        padding-bottom: 30px;
-                        height: 650px;
                         
 
                         .textoAlquiler4{
                             border-top: none;
                             margin-top: 20px;
+                            font-size: 18px;
+                        }
+                        
+                        #detallesAlquilerCuatro{
+                            margin-top: 50px;
+                            border-left: none;
+                            font-size: 18px;
                         }
 
                         #botonDetallesAlquiler4{
                             margin-top: 0px;
-                            margin-left: 200px;
+                            margin-left: 150px;
+                            font-size: 18px;
                         }
                     }
 
@@ -300,35 +369,42 @@
                         margin-top: 10px;
                         margin-left: 0px;
                         margin-bottom: 0%;
-                        height: 400px;
-                        width: 375;
+                        height: 250px;
+                        width: 300px;
                         border-bottom: none;
 
                         .quintaFoto{
-                            width: 371;
+                            width: 296px;
+                            height: 250px;
                         }
 
                     }
                     .descripcionAlquiler5{
-                        width: 375;
+                        width: 300;
                         grid-area: descripcionAlquiler5;
                         border-top: none;
                         border-left: 2px solid black;
                         margin-left: 0px;
                         margin-top: 0%;
                         margin-bottom: 30px;
-                        padding-bottom: 30px;
-                        height: 650px;
                         
 
                         .textoAlquiler5{
                             border-top: none;
                             margin-top: 30px;
+                            font-size: 18px;
+                        }
+
+                        #detallesAlquilerCinco{
+                            margin-top: 50px;
+                            border-left: none;
+                            font-size: 18px;
                         }
 
                         #botonDetallesAlquiler5{
                             margin-top: 0px;
-                            margin-left: 200px;
+                            margin-left: 150px;
+                            font-size: 18px;
                         }
                     }   
                 }
@@ -341,8 +417,8 @@
 
 
 
-/*COMPRA*/
-@media(min-width: 400px) and (max-width: 768px) and
+/*CONTACTO*/
+@media(min-width: 300px) and (max-width: 767px) and (max-height: 812px) and
     (max-height:1024px){
         body{
             main{
@@ -365,15 +441,23 @@
 
 
 /*COMPRA*/
-@media(max-width: 375px) and (max-height: 812px){
+@media(min-width: 300px) and (max-width: 767px) and (max-height: 812px){
         body{
+            // width: 300px;
             main{
+                width: 300px;
+                div{
+                    h2{
+                        width: 300px;
+                    }
+                }
                 .todasEnCompra{
+                    width: 300px;
                     display: grid;
                     grid-template-rows: auto auto auto auto
                     auto auto auto auto auto auto;
                     row-gap: 0;
-                    grid-template-columns: 768px;
+                    grid-template-columns: 300px;
                     grid-template-areas: 
                     "foto1"
                     "descripcion1"
@@ -389,37 +473,43 @@
                     .fotoCasa1{
                         grid-area: foto1;
                         margin-top: 10px;
-                        margin-left: 0px;
                         margin-bottom: 0%;
-                        height: 400px;
-                        width: 375px;
+                        height: 200px;
+                        width: 300px;
                         border-bottom: none;
 
                         .primeraFoto{
-                            width: 371px;
+                            width: 296px;
+                            height: 250px;
                         }
 
                     }
                     .descripcionCasa1{
-                        width: 375px;
+                        width: 300px;
                         grid-area: descripcion1;
                         border-top: none;
                         border-left: 2px solid black;
                         margin-left: 0px;
                         margin-top: 0%;
                         margin-bottom: 30px;
-                        padding-bottom: 30px;
-                        height: 700px;
                         
 
                         .textoCasa1{
                             border-top: none;
                             margin-top: 50px;
+                            font-size: 18px;
+                        }
+
+                        #detallesCasaUno{
+                            margin-top: 50px;
+                            border-left: none;
+                            font-size: 18px;
                         }
 
                         #botonDetalles{
                             margin-top: 0px;
-                            margin-left: 200px;
+                            margin-left: 150px;
+                            font-size: 18px;
                         }
                     }
                     
@@ -429,37 +519,43 @@
                         margin-top: 10px;
                         margin-left: 0px;
                         margin-bottom: 0%;
-                        height: 400px;
-                        width: 375px;
+                        height: 250px;
+                        width: 300px;
                         border-bottom: none;
                         
 
                         .segundaFoto{
-                            width: 371px;
+                            width: 296px;
+                            height: 250px;
                         }
 
                     }
                     .descripcionCasa2{
-                        width: 375px;
+                        width: 300px;
                         grid-area: descripcion2;
                         border-top: none;
                         border-left: 2px solid black;
                         margin-left: 0px;
                         margin-top: 0%;
-                        margin-bottom: 0%;
                         margin-bottom: 30px;
-                        padding-bottom: 30px;
-                        height: 650px;
                         
 
                         .textoCasa2{
                             border-top: none;
                             margin-top: 10px;
+                            font-size: 18px;
+                        }
+
+                        #detallesCasaDos{
+                            margin-top: 50px;
+                            border-left: none;
+                            font-size: 18px; 
                         }
 
                         #botonDetalles2{
                             margin-top: 10px;
-                            margin-left: 200px;
+                            margin-left: 150px;
+                            font-size: 18px;
                         }
                     }
 
@@ -468,35 +564,46 @@
                         margin-top: 10px;
                         margin-left: 0px;
                         margin-bottom: 0%;
-                        height: 200px;
-                        width: 375px;
+                        height: 150px;
+                        width: 300px;
                         border-bottom: none;
 
                         .terceraFoto{
-                            width: 371px;
+                            width: 295px;  
                         }
 
                     }
                     .descripcionCasa3{
-                        width: 375px;
+                        width: 300px;
                         grid-area: descripcion3;
                         border-top: none;
                         border-left: 2px solid black;
                         margin-left: 0px;
                         margin-top: 0%;
                         margin-bottom: 30px;
-                        padding-bottom: 30px;
-                        height: 650px;
                         
 
                         .textoCasa3{
                             border-top: none;
                             margin-top: 50px;
+                            font-size: 18px;
+                        }
+
+                        #detallesCasaTres{
+                            margin-top: 50px;
+                            border-left: none;
+                            font-size: 18px;
+                            width: 296px;
+
+                            .col{
+                                padding-right: 0%;
+                            }
                         }
 
                         #botonDetalles3{
                             margin-top: 0px;
-                            margin-left: 200px;
+                            margin-left: 150px;
+                            font-size: 18px;
                         }
                     }
 
@@ -505,36 +612,48 @@
                         margin-top: 10px;
                         margin-left: 0px;
                         margin-bottom: 0%;
-                        height: 400px;
-                        width: 375px;
+                        height: 200px;
+                        width: 300px;
                         border-bottom: none;
                         
 
                         .cuartaFoto{
-                            width: 371px;
+                            width: 296px;
+                            height: 250px;
                         }
 
                     }
                     .descripcionCasa4{
-                        width: 375px;
+                        width: 300px;
                         grid-area: descripcion4;
                         border-top: none;
                         border-left: 2px solid black;
                         margin-left: 0px;
                         margin-top: 0%;
                         margin-bottom: 30px;
-                        padding-bottom: 30px;
-                        height: 650px;
                         
 
                         .textoCasa4{
                             border-top: none;
                             margin-top: 50px;
+                            font-size: 18px;
+                        }
+
+                        #detallesCasaCuatro{
+                            margin-top: 50px;
+                            border-left: none;
+                            font-size: 18px;
+                            width: 296px;
+
+                            .col{
+                                padding-right: 0%;
+                            }
                         }
 
                         #botonDetalles4{
                             margin-top: 0px;
-                            margin-left: 200px;
+                            margin-left: 150px;
+                            font-size: 18px;
                         }
                     }
 
@@ -543,35 +662,43 @@
                         margin-top: 10px;
                         margin-left: 0px;
                         margin-bottom: 0%;
-                        height: 400px;
-                        width: 375px;
+                        height: 225px;
+                        width: 300px;
                         border-bottom: none;
 
                         .quintaFoto{
-                            width: 371px;
+                            width: 296px;
+                            height: 250px;
                         }
 
                     }
                     .descripcionCasa5{
-                        width: 375px;
+                        width: 300px;
                         grid-area: descripcion5;
                         border-top: none;
                         border-left: 2px solid black;
                         margin-left: 0px;
                         margin-top: 0%;
                         margin-bottom: 30px;
-                        padding-bottom: 30px;
-                        height: 650px;
                         
 
                         .textoCasa5{
                             border-top: none;
                             margin-top: 50px;
+                            font-size: 18px;
+                        }
+
+                        #detallesCasaCinco{
+                            margin-top: 50px;
+                            border-left: none;
+                            font-size: 18px;  
+                            width: 296px;
                         }
 
                         #botonDetalles5{
                             margin-top: 0px;
-                            margin-left: 200px;
+                            margin-left: 150px;
+                            font-size: 18px;
                         }
                     }   
                 }
@@ -582,52 +709,51 @@
     }
 
     /*GALERÍA*/
-    @media(max-width: 375px) and (max-height: 812px){
-        body{
-            main{
-                div{
-                    h2{
-                        font-size: 30px;
-                    }
-                }
-                .contenedorFotos{
-                    width: 375px;
-        
-                    #galeriaPrimera{
-                        width: 375px;                        
-                    }
-
-                    #galeriaSegunda{
-                        width: 375px;
-                    }
-                    #galeriaTercera{
-                        width: 375px;
-                    }
-                    #llaves{
-                        width: 375px;
-                    }
-
-                    #img-7{
-                        width: 375px;
-                    }
-                    #img-8{
-                        width: 375px;
-                    }
-                    #img-9{
-                        width: 375px;
-                    }
-                    #img-11{
-                        width: 375px;
-                    }
-                    #img-12{
-                        width: 375px;
-                    }
-                    #ultimaFoto{
-                        width: 375px;
-                    }
+    @media(min-width: 300px) and (max-width: 767px) and (max-height: 812px){
+    body{
+        main{
+            div{
+                h2{
+                    font-size: 30px;
                 }
             }
+            .contenedorFotos{
+        
+                #galeriaPrimera{
+                    width: 300px;                        
+                }
 
+                #galeriaSegunda{
+                    width: 300px;
+                }
+                #galeriaTercera{
+                    width: 300px;
+                }
+                #llaves{
+                    width: 300px;
+                }
+
+                #img-7{
+                    width: 300px;
+                }
+                #img-8{
+                    width: 300px;
+                }
+                #img-9{
+                    width: 300px;
+                }
+                #img-11{
+                    width: 300px;
+                }
+                #img-12{
+                    width: 300px;
+                }
+                #ultimaFoto{
+                    width: 300px;
+                }
+            }
         }
+
     }
+}
     /*/GALERÍA*/
