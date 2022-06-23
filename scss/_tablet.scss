@@ -1,5 +1,6 @@
  /*VERSION IPAD 768X1024 */
-@media(min-width: 768px) and (max-width: 800px) and
+@import "contenidosass";
+ @media(min-width: 768px) and (max-width: 800px) and
     (max-height:1024px){
     .contenedorPadre{
         display: grid;
@@ -29,6 +30,10 @@
             .fondoPrincipal{
                 width:768px;
 
+                h2{
+                    width: 768px;
+                }
+
                 #carouselExampleControls{
                     margin: 0%;
                     width: 768px;
@@ -44,6 +49,7 @@
 
                 .quienesSomos{
                     text-align: center;
+                    margin-left: 0%;
                 }
             }
             .recomendacion{
@@ -96,23 +102,16 @@
     (max-height:1024px){
         body{
             main{
+                div{
+                    h2{
+                        width: 768px;
+                    }
+                }
                 .contenedorFotos{
                     width: 768px;
         
-                    #galeriaPrimera{
+                    #galeriaPrimera, #galeriaSegunda, #img-7, #ultimaFoto{
                         width: 767px;                        
-                    }
-
-                    #galeriaSegunda{
-                        width: 767px;
-                    }
-
-                    #img-7{
-                        width: 767px;
-                    }
-
-                    #ultimaFoto{
-                        width: 767px;
                     }
                 }
             }
@@ -125,6 +124,11 @@
     (max-height:1024px){
         body{
             main{
+                div{
+                    h2{
+                        width: 768px;
+                    }
+                }
                 form{
                     margin-left: 0%;
                     margin-left: 7px;
@@ -156,6 +160,11 @@
     (max-height:1024px){
         body{
             main{
+                div{
+                    h2{
+                        width: 768px;
+                    }
+                }
                 .todasEnCompra{
                     display: grid;
                     grid-template-rows: auto auto auto auto
@@ -176,22 +185,12 @@
                     
                     .fotoCasa1{
                         grid-area: foto1;
-                        margin-top: 10px;
-                        margin-left: 60px;
-                        height: 400px;
-                        width: 650px;
-                        border-bottom: none;
+                        @include tabletFotos;
 
                     }
                     .descripcionCasa1{
-                        width: 650px;
                         grid-area: descripcion1;
-                        border-top: none;
-                        border-left: 2px solid black;
-                        border-bottom: 1px solid black;
-                        margin-left: 60px;
-                        margin-top: 0%;
-                        margin-bottom: 30px;
+                        @include tabletDescripcion;
                         
 
                         .textoCasa1{
@@ -213,21 +212,12 @@
         
                     .fotoCasa2{
                         grid-area: foto2;
-                        margin-top: 10px;
-                        margin-left: 60px;
-                        height: 400px;
-                        width: 650px;
-                        border-bottom: none;
+                        @include tabletFotos;
 
                     }
                     .descripcionCasa2{
-                        width: 650px;
                         grid-area: descripcion2;
-                        border-top: none;
-                        border-left: 2px solid black;
-                        margin-left: 60px;
-                        margin-top: 0%;
-                        margin-bottom: 30px;
+                        @include tabletDescripcion;
                         
 
                         .textoCasa2{
@@ -248,21 +238,12 @@
 
                     .fotoCasa3{
                         grid-area: foto3;
-                        margin-top: 10px;
-                        margin-left: 60px;
-                        height: 400px;
-                        width: 650px;
-                        border-bottom: none;
+                        @include tabletFotos;
 
                     }
                     .descripcionCasa3{
-                        width: 650px;
                         grid-area: descripcion3;
-                        border-top: none;
-                        border-left: 2px solid black;
-                        margin-left: 60px;
-                        margin-top: 0%;
-                        margin-bottom: 30px;
+                        @include tabletDescripcion;
                         
 
                         .textoCasa3{
@@ -289,21 +270,12 @@
 
                     .fotoCasa4{
                         grid-area: foto4;
-                        margin-top: 10px;
-                        margin-left: 60px;
-                        height: 400px;
-                        width: 650px;
-                        border-bottom: none;
+                        @include tabletFotos;
 
                     }
                     .descripcionCasa4{
-                        width: 650px;
                         grid-area: descripcion4;
-                        border-top: none;
-                        border-left: 2px solid black;
-                        margin-left: 60px;
-                        margin-top: 0%;
-                        margin-bottom: 30px;
+                        @include tabletDescripcion;
                         
 
                         .textoCasa4{
@@ -330,21 +302,12 @@
 
                     .fotoCasa5{
                         grid-area: foto5;
-                        margin-top: 10px;
-                        margin-left: 60px;
-                        height: 400px;
-                        width: 650px;
-                        border-bottom: none;
+                        @include tabletFotos;
 
                     }
                     .descripcionCasa5{
-                        width: 650px;
                         grid-area: descripcion5;
-                        border-top: none;
-                        border-left: 2px solid black;
-                        margin-left: 60px;
-                        margin-top: 0%;
-                        margin-bottom: 30px;
+                        @include tabletDescripcion;
                         
 
                         .textoCasa5{
@@ -406,6 +369,11 @@
             width: 768px;
             main{
                 width: 768px;
+                div{
+                    h2{
+                        width: 768px;
+                    }
+                }
                 .todasEnAlquiler{
                     width: 768px;
                     display: grid;
@@ -427,25 +395,16 @@
                     
                     .fotoAlquiler1{
                         grid-area: fotoAlquiler1;
-                        margin-top: 10px;
-                        margin-left: 60px;
-                        height: 400px;
-                        width: 650px;
-                        border-bottom: none;
+                        @include tabletFotos;
 
                         .primeraFoto{
                             width: 646px;
                         }
 
                     }
-                    .descripcionAlquiler1{
-                        width: 650px;
+                    .descripcionAlquiler1{                        
                         grid-area: descripcionAlquiler1;
-                        border-top: none;
-                        border-left: 2px solid black;
-                        margin-left: 60px;
-                        margin-top: 0%;
-                        margin-bottom: 30px;
+                        @include tabletDescripcion;
                         
 
                         .textoAlquiler1{
@@ -466,13 +425,9 @@
                     }
                     
         
-                    .fotoAlquiler2{
+                    .fotoAlquiler2{                       
                         grid-area: fotoAlquiler2;
-                        margin-top: 10px;
-                        margin-left: 60px;
-                        height: 400px;
-                        width: 650px;
-                        border-bottom: none;
+                        @include tabletFotos;
 
                         .segundaFoto{
                             width: 646px;
@@ -480,13 +435,8 @@
 
                     }
                     .descripcionAlquiler2{
-                        width: 650px;
                         grid-area: descripcionAlquiler2;
-                        border-top: none;
-                        border-left: 2px solid black;
-                        margin-left: 60px;
-                        margin-top: 0%;
-                        margin-bottom: 30px;
+                        @include tabletDescripcion;
                         
 
                         .textoAlquiler2{
@@ -508,24 +458,15 @@
 
                     .fotoAlquiler3{
                         grid-area: fotoAlquiler3;
-                        margin-top: 10px;
-                        margin-left: 60px;
-                        height: 400px;
-                        width: 650px;
-                        border-bottom: none;
+                        @include tabletFotos;
 
                         .terceraFoto{
                             width: 646px;
                         }
                     }
                     .descripcionAlquiler3{
-                        width: 650px;
                         grid-area: descripcionAlquiler3;
-                        border-top: none;
-                        border-left: 2px solid black;
-                        margin-left: 60px;
-                        margin-top: 0%;
-                        margin-bottom: 30px;
+                        @include tabletDescripcion;
                         
 
                         .textoAlquiler3{
@@ -547,11 +488,7 @@
 
                     .fotoAlquiler4{
                         grid-area: fotoAlquiler4;
-                        margin-top: 10px;
-                        margin-left: 60px;
-                        height: 400px;
-                        width: 650px;
-                        border-bottom: none;
+                        @include tabletFotos;
 
                         .cuartaFoto{
                             width: 646px;
@@ -559,13 +496,8 @@
 
                     }
                     .descripcionAlquiler4{
-                        width: 650px;
                         grid-area: descripcionAlquiler4;
-                        border-top: none;
-                        border-left: 2px solid black;
-                        margin-left: 60px;
-                        margin-top: 0%;
-                        margin-bottom: 30px;
+                        @include tabletDescripcion;
                         
 
                         .textoAlquiler4{
@@ -587,11 +519,7 @@
 
                     .fotoAlquiler5{
                         grid-area: fotoAlquiler5;
-                        margin-top: 10px;
-                        margin-left: 60px;
-                        height: 400px;
-                        width: 650px;
-                        border-bottom: none;
+                        @include tabletFotos;
 
                         .quintaFoto{
                             width: 646px;
@@ -599,13 +527,8 @@
 
                     }
                     .descripcionAlquiler5{
-                        width: 650px;
                         grid-area: descripcionAlquiler5;
-                        border-top: none;
-                        border-left: 2px solid black;
-                        margin-left: 60px;
-                        margin-top: 0%;
-                        margin-bottom: 30px;
+                        @include tabletDescripcion;
                         
 
                         .textoAlquiler5{

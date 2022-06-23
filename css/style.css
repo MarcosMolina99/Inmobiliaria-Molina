@@ -133,7 +133,8 @@ body main section .subtitulo {
 body main section .quienesSomos {
   padding: 20px;
   line-height: 45px;
-  font-size: 23px; }
+  font-size: 23px;
+  margin-left: 60px; }
 
 body main .recomendacion {
   margin-top: 30px;
@@ -143,7 +144,7 @@ body main .recomendacion {
 body main .marcas {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-right: 150px; }
   body main .marcas div .fotosPatrocinios {
     margin-left: 150px;
@@ -157,18 +158,22 @@ body main .marcas {
   body main .marcas div #pintureria {
     margin-left: 90px; }
   body main .marcas div #ventanas {
-    margin-left: 100px; }
+    margin-left: 150px; }
 
-body main h2 {
-  width: 1800px;
+/*ALQUILER Y COMPRA*/
+/*/ALQUILER Y COMPRA*/
+/*TABLET: COMPRA Y ALQUILER*/
+/*/TABLET: COMPRA Y ALQUILER*/
+/*MOBILE: COMPRA Y ALQUILER*/
+/*/MOBILE: COMPRA Y ALQUILER*/
+body main div h2 {
+  width: 1902px;
   margin-right: 0%; }
 
 body main .todasEnCompra {
-  margin-right: 0%;
-  padding-right: 0%;
   display: grid;
-  grid-template-rows: auto auto auto;
-  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: 1fr 3fr;
   row-gap: 20px;
   grid-template-areas: "foto1 descripcion1" "foto2 descripcion2" "foto3 descripcion3" "foto4 descripcion4" "foto5 descripcion5"; }
   body main .todasEnCompra .fotoCasa1 {
@@ -179,11 +184,11 @@ body main .todasEnCompra {
       height: 422px;
       width: 646px; }
   body main .todasEnCompra .descripcionCasa1 {
-    font-size: 20px;
     text-align: left;
     grid-area: descripcion1;
-    border-top: 2px solid black;
+    font-size: 20px;
     border-right: 2px solid black;
+    border-top: 2px solid black;
     border-bottom: 1px solid black;
     border-left: none; }
     body main .todasEnCompra .descripcionCasa1 .textoCasa1 {
@@ -210,11 +215,11 @@ body main .todasEnCompra {
       height: 359px;
       width: 646px; }
   body main .todasEnCompra .descripcionCasa2 {
-    font-size: 20px;
     text-align: left;
     grid-area: descripcion2;
-    border-top: 2px solid black;
+    font-size: 20px;
     border-right: 2px solid black;
+    border-top: 2px solid black;
     border-bottom: 1px solid black;
     border-left: none; }
     body main .todasEnCompra .descripcionCasa2 .textoCasa2 {
@@ -241,11 +246,11 @@ body main .todasEnCompra {
     body main .todasEnCompra .fotoCasa3 .terceraFoto {
       width: 646px; }
   body main .todasEnCompra .descripcionCasa3 {
-    font-size: 20px;
     text-align: left;
     grid-area: descripcion3;
-    border-top: 2px solid black;
+    font-size: 20px;
     border-right: 2px solid black;
+    border-top: 2px solid black;
     border-bottom: 1px solid black;
     border-left: none; }
     body main .todasEnCompra .descripcionCasa3 .textoCasa3 {
@@ -254,9 +259,10 @@ body main .todasEnCompra {
       border-top: 1px solid black;
       border-left: 2px solid black;
       margin-top: 96px;
-      margin-left: 0px; }
+      margin-left: -1px;
+      margin-right: 0%; }
       body main .todasEnCompra .descripcionCasa3 #detallesCasaTres .col {
-        padding-left: 0%; }
+        padding: 0%; }
     body main .todasEnCompra .descripcionCasa3 #botonDetalles3 {
       margin-left: 80%;
       margin-top: 80px;
@@ -276,11 +282,11 @@ body main .todasEnCompra {
       width: 646px;
       height: 416px; }
   body main .todasEnCompra .descripcionCasa4 {
-    font-size: 20px;
     text-align: left;
     grid-area: descripcion4;
-    border-top: 2px solid black;
+    font-size: 20px;
     border-right: 2px solid black;
+    border-top: 2px solid black;
     border-bottom: 1px solid black;
     border-left: none; }
     body main .todasEnCompra .descripcionCasa4 .textoCasa4 {
@@ -289,9 +295,10 @@ body main .todasEnCompra {
       border-top: 1px solid black;
       border-left: 2px solid black;
       margin-top: 96px;
-      margin-left: 0px; }
+      width: 1275px;
+      margin-left: -1px; }
       body main .todasEnCompra .descripcionCasa4 #detallesCasaCuatro .col {
-        padding-left: 0px; }
+        padding: 0px; }
     body main .todasEnCompra .descripcionCasa4 #botonDetalles4 {
       margin-left: 80%;
       margin-top: 80px;
@@ -311,11 +318,11 @@ body main .todasEnCompra {
       width: 646px;
       height: 417px; }
   body main .todasEnCompra .descripcionCasa5 {
-    font-size: 20px;
     text-align: left;
     grid-area: descripcion5;
-    border-top: 2px solid black;
+    font-size: 20px;
     border-right: 2px solid black;
+    border-top: 2px solid black;
     border-bottom: 1px solid black;
     border-left: none; }
     body main .todasEnCompra .descripcionCasa5 .textoCasa5 {
@@ -324,7 +331,8 @@ body main .todasEnCompra {
       border-top: 1px solid black;
       border-left: 2px solid black;
       margin-top: 96px;
-      margin-left: 0%; }
+      width: 1275px;
+      margin-left: -1px; }
       body main .todasEnCompra .descripcionCasa5 #detallesCasaCinco .col {
         padding: 0%; }
     body main .todasEnCompra .descripcionCasa5 #botonDetalles5 {
@@ -340,9 +348,15 @@ body main .todasEnCompra {
 
 /* /COMPRA */
 /* ALQUILER */
+/*ALQUILER Y COMPRA*/
+/*/ALQUILER Y COMPRA*/
+/*TABLET: COMPRA Y ALQUILER*/
+/*/TABLET: COMPRA Y ALQUILER*/
+/*MOBILE: COMPRA Y ALQUILER*/
+/*/MOBILE: COMPRA Y ALQUILER*/
 body main .todasEnAlquiler {
   display: grid;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
   grid-template-columns: 1fr auto;
   row-gap: 20px;
   grid-template-areas: "fotoAlquiler1 descripcionAlquiler1" "fotoAlquiler2 descripcionAlquiler2" "fotoAlquiler3 descripcionAlquiler3" "fotoAlquiler4 descripcionAlquiler4" "fotoAlquiler5 descripcionAlquiler5"; }
@@ -511,9 +525,7 @@ body main {
     flex-flow: row wrap; }
     body main .contenedorFotos #galeriaPrimera {
       width: 875px; }
-    body main .contenedorFotos #img-8 {
-      width: 600px; }
-    body main .contenedorFotos #img-12 {
+    body main .contenedorFotos #img-8, body main .contenedorFotos #img-12 {
       width: 600px; }
 
 body main div h2 {
@@ -527,7 +539,7 @@ body main form {
   border-radius: 30px;
   text-align: center;
   display: inline-block;
-  margin-left: 22%; }
+  margin-left: 20%; }
   body main form legend {
     font-size: 3rem;
     text-align: center;
@@ -550,7 +562,7 @@ body main form {
       margin-bottom: 30px;
       width: 400px;
       height: 400px; }
-    body main form span #botonEnviar {
+    body main form span #botonEnviar, body main form span #botonRestablecer {
       margin-left: 100px;
       margin-bottom: 30px;
       background-color: #1ad8ff;
@@ -560,14 +572,15 @@ body main form {
       padding: 5px 25px; }
     body main form span #botonRestablecer {
       margin-left: 10px;
-      margin-right: 30px;
-      margin-bottom: 30px;
-      background-color: #1ad8ff;
-      padding: 5px 25px;
-      border: 2px solid black;
-      border-radius: 30px; }
+      margin-right: 30px; }
 
 /*VERSION IPAD 768X1024 */
+/*ALQUILER Y COMPRA*/
+/*/ALQUILER Y COMPRA*/
+/*TABLET: COMPRA Y ALQUILER*/
+/*/TABLET: COMPRA Y ALQUILER*/
+/*MOBILE: COMPRA Y ALQUILER*/
+/*/MOBILE: COMPRA Y ALQUILER*/
 @media (min-width: 768px) and (max-width: 800px) and (max-height: 1024px) {
   .contenedorPadre {
     display: grid;
@@ -586,13 +599,16 @@ body main form {
       width: 768px; }
       .contenedorPadre main .fondoPrincipal {
         width: 768px; }
+        .contenedorPadre main .fondoPrincipal h2 {
+          width: 768px; }
         .contenedorPadre main .fondoPrincipal #carouselExampleControls {
           margin: 0%;
           width: 768px; }
       .contenedorPadre main section .subtitulo {
         font-size: 3rem; }
       .contenedorPadre main section .quienesSomos {
-        text-align: center; }
+        text-align: center;
+        margin-left: 0%; }
       .contenedorPadre main .recomendacion {
         text-align: center;
         margin-left: 5px; }
@@ -614,20 +630,18 @@ body main form {
 /*INDEX*/
 /*GALERÍA*/
 @media (min-width: 768px) and (max-width: 800px) and (max-height: 1024px) {
+  body main div h2 {
+    width: 768px; }
   body main .contenedorFotos {
     width: 768px; }
-    body main .contenedorFotos #galeriaPrimera {
-      width: 767px; }
-    body main .contenedorFotos #galeriaSegunda {
-      width: 767px; }
-    body main .contenedorFotos #img-7 {
-      width: 767px; }
-    body main .contenedorFotos #ultimaFoto {
+    body main .contenedorFotos #galeriaPrimera, body main .contenedorFotos #galeriaSegunda, body main .contenedorFotos #img-7, body main .contenedorFotos #ultimaFoto {
       width: 767px; } }
 
 /*GALERÍA*/
 /*CONTACTO*/
 @media (min-width: 768px) and (max-width: 800px) and (max-height: 1024px) {
+  body main div h2 {
+    width: 768px; }
   body main form {
     margin-left: 0%;
     margin-left: 7px; }
@@ -638,12 +652,14 @@ body main form {
       width: 350px;
       height: 150px;
       margin-right: 250px; }
-    body main form span #botonEnviar {
+    body main form span #botonEnviar, body main form span #botonRestablecer {
       margin-top: 225px; } }
 
 /*/CONTACTO*/
 /*COMPRA*/
 @media (min-width: 768px) and (max-width: 800px) and (max-height: 1024px) {
+  body main div h2 {
+    width: 768px; }
   body main .todasEnCompra {
     display: grid;
     grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
@@ -658,11 +674,10 @@ body main form {
       width: 650px;
       border-bottom: none; }
     body main .todasEnCompra .descripcionCasa1 {
-      width: 650px;
       grid-area: descripcion1;
+      width: 650px;
       border-top: none;
       border-left: 2px solid black;
-      border-bottom: 1px solid black;
       margin-left: 60px;
       margin-top: 0%;
       margin-bottom: 30px; }
@@ -683,8 +698,8 @@ body main form {
       width: 650px;
       border-bottom: none; }
     body main .todasEnCompra .descripcionCasa2 {
-      width: 650px;
       grid-area: descripcion2;
+      width: 650px;
       border-top: none;
       border-left: 2px solid black;
       margin-left: 60px;
@@ -707,8 +722,8 @@ body main form {
       width: 650px;
       border-bottom: none; }
     body main .todasEnCompra .descripcionCasa3 {
-      width: 650px;
       grid-area: descripcion3;
+      width: 650px;
       border-top: none;
       border-left: 2px solid black;
       margin-left: 60px;
@@ -734,8 +749,8 @@ body main form {
       width: 650px;
       border-bottom: none; }
     body main .todasEnCompra .descripcionCasa4 {
-      width: 650px;
       grid-area: descripcion4;
+      width: 650px;
       border-top: none;
       border-left: 2px solid black;
       margin-left: 60px;
@@ -761,8 +776,8 @@ body main form {
       width: 650px;
       border-bottom: none; }
     body main .todasEnCompra .descripcionCasa5 {
-      width: 650px;
       grid-area: descripcion5;
+      width: 650px;
       border-top: none;
       border-left: 2px solid black;
       margin-left: 60px;
@@ -798,6 +813,8 @@ body main form {
     width: 768px; }
     body main {
       width: 768px; }
+      body main div h2 {
+        width: 768px; }
       body main .todasEnAlquiler {
         width: 768px;
         display: grid;
@@ -815,8 +832,8 @@ body main form {
           body main .todasEnAlquiler .fotoAlquiler1 .primeraFoto {
             width: 646px; }
         body main .todasEnAlquiler .descripcionAlquiler1 {
-          width: 650px;
           grid-area: descripcionAlquiler1;
+          width: 650px;
           border-top: none;
           border-left: 2px solid black;
           margin-left: 60px;
@@ -842,8 +859,8 @@ body main form {
           body main .todasEnAlquiler .fotoAlquiler2 .segundaFoto {
             width: 646px; }
         body main .todasEnAlquiler .descripcionAlquiler2 {
-          width: 650px;
           grid-area: descripcionAlquiler2;
+          width: 650px;
           border-top: none;
           border-left: 2px solid black;
           margin-left: 60px;
@@ -869,8 +886,8 @@ body main form {
           body main .todasEnAlquiler .fotoAlquiler3 .terceraFoto {
             width: 646px; }
         body main .todasEnAlquiler .descripcionAlquiler3 {
-          width: 650px;
           grid-area: descripcionAlquiler3;
+          width: 650px;
           border-top: none;
           border-left: 2px solid black;
           margin-left: 60px;
@@ -896,8 +913,8 @@ body main form {
           body main .todasEnAlquiler .fotoAlquiler4 .cuartaFoto {
             width: 646px; }
         body main .todasEnAlquiler .descripcionAlquiler4 {
-          width: 650px;
           grid-area: descripcionAlquiler4;
+          width: 650px;
           border-top: none;
           border-left: 2px solid black;
           margin-left: 60px;
@@ -923,8 +940,8 @@ body main form {
           body main .todasEnAlquiler .fotoAlquiler5 .quintaFoto {
             width: 646px; }
         body main .todasEnAlquiler .descripcionAlquiler5 {
-          width: 650px;
           grid-area: descripcionAlquiler5;
+          width: 650px;
           border-top: none;
           border-left: 2px solid black;
           margin-left: 60px;
@@ -942,6 +959,12 @@ body main form {
             margin-left: 450px; } }
 
 /*/ALQUILER*/
+/*ALQUILER Y COMPRA*/
+/*/ALQUILER Y COMPRA*/
+/*TABLET: COMPRA Y ALQUILER*/
+/*/TABLET: COMPRA Y ALQUILER*/
+/*MOBILE: COMPRA Y ALQUILER*/
+/*/MOBILE: COMPRA Y ALQUILER*/
 @media (min-width: 300px) and (max-width: 767px) and (max-height: 812px) {
   /*INDEX*/
   .contenedorPadre {
@@ -967,7 +990,8 @@ body main form {
       .contenedorPadre main .fondoPrincipal section .quienesSomos {
         text-align: center;
         font-size: 20px;
-        width: 300px; }
+        width: 300px;
+        margin-left: 0%; }
       .contenedorPadre main .fondoPrincipal .recomendacion {
         width: 300px;
         margin: 0%; }
@@ -1021,7 +1045,7 @@ body main form {
           width: 225px;
           margin-left: 0%;
           font-size: 18px; }
-        body #formMain form span #botonEnviar {
+        body #formMain form span #botonEnviar, body #formMain main form span #botonRestablecer, body main #formMain form span #botonRestablecer {
           margin-top: 15px;
           margin-left: 0px;
           font-size: 18px; }
@@ -1051,15 +1075,15 @@ body main form {
           margin-top: 10px;
           margin-left: 0px;
           margin-bottom: 0%;
-          height: 200px;
+          height: 250px;
           width: 300px;
           border-bottom: none; }
           body main .todasEnAlquiler .fotoAlquiler1 .primeraFoto {
             width: 296px;
             height: 250px; }
         body main .todasEnAlquiler .descripcionAlquiler1 {
-          width: 300px;
           grid-area: descripcionAlquiler1;
+          width: 300px;
           border-top: none;
           border-left: 2px solid black;
           margin-left: 0px;
@@ -1089,8 +1113,8 @@ body main form {
             width: 296px;
             height: 250px; }
         body main .todasEnAlquiler .descripcionAlquiler2 {
-          width: 300px;
           grid-area: descripcionAlquiler2;
+          width: 300px;
           border-top: none;
           border-left: 2px solid black;
           margin-left: 0px;
@@ -1113,15 +1137,15 @@ body main form {
           margin-top: 10px;
           margin-left: 0px;
           margin-bottom: 0%;
-          height: 200px;
+          height: 250px;
           width: 300px;
           border-bottom: none; }
           body main .todasEnAlquiler .fotoAlquiler3 .terceraFoto {
             width: 296px;
             height: 250px; }
         body main .todasEnAlquiler .descripcionAlquiler3 {
-          width: 300px;
           grid-area: descripcionAlquiler3;
+          width: 300px;
           border-top: none;
           border-left: 2px solid black;
           margin-left: 0px;
@@ -1150,8 +1174,8 @@ body main form {
             width: 296px;
             height: 250px; }
         body main .todasEnAlquiler .descripcionAlquiler4 {
-          width: 300px;
           grid-area: descripcionAlquiler4;
+          width: 300px;
           border-top: none;
           border-left: 2px solid black;
           margin-left: 0px;
@@ -1181,8 +1205,8 @@ body main form {
             width: 296px;
             height: 250px; }
         body main .todasEnAlquiler .descripcionAlquiler5 {
-          width: 300;
           grid-area: descripcionAlquiler5;
+          width: 300px;
           border-top: none;
           border-left: 2px solid black;
           margin-left: 0px;
@@ -1228,16 +1252,17 @@ body main form {
       body main .todasEnCompra .fotoCasa1 {
         grid-area: foto1;
         margin-top: 10px;
+        margin-left: 0px;
         margin-bottom: 0%;
-        height: 200px;
+        height: 250px;
         width: 300px;
         border-bottom: none; }
         body main .todasEnCompra .fotoCasa1 .primeraFoto {
           width: 296px;
           height: 250px; }
       body main .todasEnCompra .descripcionCasa1 {
-        width: 300px;
         grid-area: descripcion1;
+        width: 300px;
         border-top: none;
         border-left: 2px solid black;
         margin-left: 0px;
@@ -1267,8 +1292,8 @@ body main form {
           width: 296px;
           height: 250px; }
       body main .todasEnCompra .descripcionCasa2 {
-        width: 300px;
         grid-area: descripcion2;
+        width: 300px;
         border-top: none;
         border-left: 2px solid black;
         margin-left: 0px;
@@ -1291,14 +1316,14 @@ body main form {
         margin-top: 10px;
         margin-left: 0px;
         margin-bottom: 0%;
-        height: 150px;
+        height: 250px;
         width: 300px;
         border-bottom: none; }
         body main .todasEnCompra .fotoCasa3 .terceraFoto {
           width: 295px; }
       body main .todasEnCompra .descripcionCasa3 {
-        width: 300px;
         grid-area: descripcion3;
+        width: 300px;
         border-top: none;
         border-left: 2px solid black;
         margin-left: 0px;
@@ -1324,15 +1349,15 @@ body main form {
         margin-top: 10px;
         margin-left: 0px;
         margin-bottom: 0%;
-        height: 200px;
+        height: 250px;
         width: 300px;
         border-bottom: none; }
         body main .todasEnCompra .fotoCasa4 .cuartaFoto {
           width: 296px;
           height: 250px; }
       body main .todasEnCompra .descripcionCasa4 {
-        width: 300px;
         grid-area: descripcion4;
+        width: 300px;
         border-top: none;
         border-left: 2px solid black;
         margin-left: 0px;
@@ -1358,15 +1383,15 @@ body main form {
         margin-top: 10px;
         margin-left: 0px;
         margin-bottom: 0%;
-        height: 225px;
+        height: 250px;
         width: 300px;
         border-bottom: none; }
         body main .todasEnCompra .fotoCasa5 .quintaFoto {
           width: 296px;
           height: 250px; }
       body main .todasEnCompra .descripcionCasa5 {
-        width: 300px;
         grid-area: descripcion5;
+        width: 300px;
         border-top: none;
         border-left: 2px solid black;
         margin-left: 0px;
@@ -1390,25 +1415,13 @@ body main form {
 @media (min-width: 300px) and (max-width: 767px) and (max-height: 812px) {
   body main div h2 {
     font-size: 30px; }
-  body main .contenedorFotos #galeriaPrimera {
-    width: 300px; }
-  body main .contenedorFotos #galeriaSegunda {
-    width: 300px; }
-  body main .contenedorFotos #galeriaTercera {
-    width: 300px; }
-  body main .contenedorFotos #llaves {
-    width: 300px; }
-  body main .contenedorFotos #img-7 {
-    width: 300px; }
-  body main .contenedorFotos #img-8 {
-    width: 300px; }
-  body main .contenedorFotos #img-9 {
-    width: 300px; }
-  body main .contenedorFotos #img-11 {
-    width: 300px; }
-  body main .contenedorFotos #img-12 {
-    width: 300px; }
-  body main .contenedorFotos #ultimaFoto {
+  body main .contenedorFotos #galeriaPrimera, body main .contenedorFotos #galeriaSegunda, body main .contenedorFotos #galeriaTercera, body main .contenedorFotos #llaves, body main .contenedorFotos #img-7, body main .contenedorFotos #img-8, body main .contenedorFotos #img-9, body main .contenedorFotos #img-11, body main .contenedorFotos #img-12, body main .contenedorFotos #ultimaFoto {
     width: 300px; } }
 
 /*/GALERÍA*/
+/*ALQUILER Y COMPRA*/
+/*/ALQUILER Y COMPRA*/
+/*TABLET: COMPRA Y ALQUILER*/
+/*/TABLET: COMPRA Y ALQUILER*/
+/*MOBILE: COMPRA Y ALQUILER*/
+/*/MOBILE: COMPRA Y ALQUILER*/

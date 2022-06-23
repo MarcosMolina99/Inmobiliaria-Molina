@@ -1,3 +1,4 @@
+@import "contenidosass";
 @media(min-width: 300px) and (max-width: 767px) and (max-height: 812px){
     /*INDEX*/
     .contenedorPadre{
@@ -41,6 +42,7 @@
                         text-align: center;
                         font-size: 20px;
                         width: 300px;
+                        margin-left: 0%;
                     }
                 }
 
@@ -191,12 +193,7 @@
                     
                     .fotoAlquiler1{
                         grid-area: fotoAlquiler1;
-                        margin-top: 10px;
-                        margin-left: 0px;
-                        margin-bottom: 0%;
-                        height: 200px;
-                        width: 300px;
-                        border-bottom: none;
+                        @include mobileFotos;
 
                         .primeraFoto{
                             width: 296px;
@@ -204,14 +201,9 @@
                         }
 
                     }
-                    .descripcionAlquiler1{
-                        width: 300px;
+                    .descripcionAlquiler1{                       
                         grid-area: descripcionAlquiler1;
-                        border-top: none;
-                        border-left: 2px solid black;
-                        margin-left: 0px;
-                        margin-top: 0%;
-                        margin-bottom: 30px;
+                        @include mobileDescripcion;
                         
 
                         .textoAlquiler1{
@@ -236,12 +228,7 @@
         
                     .fotoAlquiler2{
                         grid-area: fotoAlquiler2;
-                        margin-top: 10px;
-                        margin-left: 0px;
-                        margin-bottom: 0%;
-                        height: 250px;
-                        width: 300px;
-                        border-bottom: none;
+                        @include mobileFotos;
 
                         .segundaFoto{
                             width: 296px;
@@ -250,13 +237,8 @@
 
                     }
                     .descripcionAlquiler2{
-                        width: 300px;
                         grid-area: descripcionAlquiler2;
-                        border-top: none;
-                        border-left: 2px solid black;
-                        margin-left: 0px;
-                        margin-top: 0%;
-                        margin-bottom: 30px;
+                        @include mobileDescripcion;
                         
 
                         .textoAlquiler2{
@@ -280,12 +262,7 @@
 
                     .fotoAlquiler3{
                         grid-area: fotoAlquiler3;
-                        margin-top: 10px;
-                        margin-left: 0px;
-                        margin-bottom: 0%;
-                        height: 200px;
-                        width: 300px;
-                        border-bottom: none;
+                        @include mobileFotos;
 
                         .terceraFoto{
                             width: 296px;
@@ -293,13 +270,8 @@
                         }
                     }
                     .descripcionAlquiler3{
-                        width: 300px;
                         grid-area: descripcionAlquiler3;
-                        border-top: none;
-                        border-left: 2px solid black;
-                        margin-left: 0px;
-                        margin-top: 0%;
-                        margin-bottom: 30px;
+                        @include mobileDescripcion;
                         
 
                         .textoAlquiler3{
@@ -322,12 +294,7 @@
 
                     .fotoAlquiler4{
                         grid-area: fotoAlquiler4;
-                        margin-top: 10px;
-                        margin-left: 0px;
-                        margin-bottom: 0%;
-                        height: 250px;
-                        width: 300px;
-                        border-bottom: none;
+                        @include mobileFotos;
 
                         .cuartaFoto{
                             width: 296px;
@@ -336,13 +303,8 @@
 
                     }
                     .descripcionAlquiler4{
-                        width: 300px;
                         grid-area: descripcionAlquiler4;
-                        border-top: none;
-                        border-left: 2px solid black;
-                        margin-left: 0px;
-                        margin-top: 0%;
-                        margin-bottom: 30px;
+                        @include mobileDescripcion;
                         
 
                         .textoAlquiler4{
@@ -366,12 +328,7 @@
 
                     .fotoAlquiler5{
                         grid-area: fotoAlquiler5;
-                        margin-top: 10px;
-                        margin-left: 0px;
-                        margin-bottom: 0%;
-                        height: 250px;
-                        width: 300px;
-                        border-bottom: none;
+                        @include mobileFotos;
 
                         .quintaFoto{
                             width: 296px;
@@ -380,13 +337,8 @@
 
                     }
                     .descripcionAlquiler5{
-                        width: 300;
                         grid-area: descripcionAlquiler5;
-                        border-top: none;
-                        border-left: 2px solid black;
-                        margin-left: 0px;
-                        margin-top: 0%;
-                        margin-bottom: 30px;
+                        @include mobileDescripcion;
                         
 
                         .textoAlquiler5{
@@ -472,11 +424,7 @@
                     
                     .fotoCasa1{
                         grid-area: foto1;
-                        margin-top: 10px;
-                        margin-bottom: 0%;
-                        height: 200px;
-                        width: 300px;
-                        border-bottom: none;
+                        @include mobileFotos;
 
                         .primeraFoto{
                             width: 296px;
@@ -485,13 +433,8 @@
 
                     }
                     .descripcionCasa1{
-                        width: 300px;
                         grid-area: descripcion1;
-                        border-top: none;
-                        border-left: 2px solid black;
-                        margin-left: 0px;
-                        margin-top: 0%;
-                        margin-bottom: 30px;
+                        @include mobileDescripcion;
                         
 
                         .textoCasa1{
@@ -516,12 +459,7 @@
         
                     .fotoCasa2{
                         grid-area: foto2;
-                        margin-top: 10px;
-                        margin-left: 0px;
-                        margin-bottom: 0%;
-                        height: 250px;
-                        width: 300px;
-                        border-bottom: none;
+                        @include mobileFotos;
                         
 
                         .segundaFoto{
@@ -531,13 +469,8 @@
 
                     }
                     .descripcionCasa2{
-                        width: 300px;
                         grid-area: descripcion2;
-                        border-top: none;
-                        border-left: 2px solid black;
-                        margin-left: 0px;
-                        margin-top: 0%;
-                        margin-bottom: 30px;
+                        @include mobileDescripcion;
                         
 
                         .textoCasa2{
@@ -561,12 +494,7 @@
 
                     .fotoCasa3{
                         grid-area: foto3;
-                        margin-top: 10px;
-                        margin-left: 0px;
-                        margin-bottom: 0%;
-                        height: 150px;
-                        width: 300px;
-                        border-bottom: none;
+                        @include mobileFotos;
 
                         .terceraFoto{
                             width: 295px;  
@@ -574,13 +502,8 @@
 
                     }
                     .descripcionCasa3{
-                        width: 300px;
                         grid-area: descripcion3;
-                        border-top: none;
-                        border-left: 2px solid black;
-                        margin-left: 0px;
-                        margin-top: 0%;
-                        margin-bottom: 30px;
+                        @include mobileDescripcion;
                         
 
                         .textoCasa3{
@@ -609,12 +532,7 @@
 
                     .fotoCasa4{
                         grid-area: foto4;
-                        margin-top: 10px;
-                        margin-left: 0px;
-                        margin-bottom: 0%;
-                        height: 200px;
-                        width: 300px;
-                        border-bottom: none;
+                        @include mobileFotos;
                         
 
                         .cuartaFoto{
@@ -624,13 +542,8 @@
 
                     }
                     .descripcionCasa4{
-                        width: 300px;
                         grid-area: descripcion4;
-                        border-top: none;
-                        border-left: 2px solid black;
-                        margin-left: 0px;
-                        margin-top: 0%;
-                        margin-bottom: 30px;
+                        @include mobileDescripcion;
                         
 
                         .textoCasa4{
@@ -659,12 +572,7 @@
 
                     .fotoCasa5{
                         grid-area: foto5;
-                        margin-top: 10px;
-                        margin-left: 0px;
-                        margin-bottom: 0%;
-                        height: 225px;
-                        width: 300px;
-                        border-bottom: none;
+                        @include mobileFotos;
 
                         .quintaFoto{
                             width: 296px;
@@ -673,13 +581,8 @@
 
                     }
                     .descripcionCasa5{
-                        width: 300px;
                         grid-area: descripcion5;
-                        border-top: none;
-                        border-left: 2px solid black;
-                        margin-left: 0px;
-                        margin-top: 0%;
-                        margin-bottom: 30px;
+                        @include mobileDescripcion;
                         
 
                         .textoCasa5{
@@ -718,39 +621,9 @@
                 }
             }
             .contenedorFotos{
-        
-                #galeriaPrimera{
+                    #galeriaPrimera,#galeriaSegunda,#galeriaTercera,#llaves,#img-7,#img-8,#img-9,#img-11,#img-12,#ultimaFoto{
                     width: 300px;                        
-                }
-
-                #galeriaSegunda{
-                    width: 300px;
-                }
-                #galeriaTercera{
-                    width: 300px;
-                }
-                #llaves{
-                    width: 300px;
-                }
-
-                #img-7{
-                    width: 300px;
-                }
-                #img-8{
-                    width: 300px;
-                }
-                #img-9{
-                    width: 300px;
-                }
-                #img-11{
-                    width: 300px;
-                }
-                #img-12{
-                    width: 300px;
-                }
-                #ultimaFoto{
-                    width: 300px;
-                }
+                    }
             }
         }
 

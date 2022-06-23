@@ -1,0 +1,70 @@
+
+/*ALQUILER Y COMPRA*/
+@mixin contenidoHover{
+    background-color: green;
+    color: white;
+}
+
+@mixin contenidoDescripcion{
+    font-size: 20px;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 1px solid black;
+    border-left: none;
+}
+
+@mixin borderColapse{
+    border-top: 1px solid black;
+    border-left: 2px solid black;
+}
+
+@mixin detallesBoton{
+    font-size: 20px;
+    color: green;
+    background-color: white;
+    border-color: green;
+}
+/*/ALQUILER Y COMPRA*/
+
+/*TABLET: COMPRA Y ALQUILER*/
+@mixin tabletDescripcion{
+    width: 650px;
+    border-top: none;
+    border-left: 2px solid black;
+    margin-left: 60px;
+    margin-top: 0%;
+    margin-bottom: 30px;
+}
+
+@mixin tabletFotos{
+    margin-top: 10px;
+    margin-left: 60px;
+    height: 400px;
+    width: 650px;
+    border-bottom: none;
+}
+
+
+/*/TABLET: COMPRA Y ALQUILER*/
+
+
+/*MOBILE: COMPRA Y ALQUILER*/
+@mixin mobileDescripcion{
+    width: 300px;
+    border-top: none;
+    border-left: 2px solid black;
+    margin-left: 0px;
+    margin-top: 0%;
+    margin-bottom: 30px;
+}
+
+@mixin mobileFotos{
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-bottom: 0%;
+    height: 250px;
+    width: 300px;
+    border-bottom: none;
+}
+
+/*/MOBILE: COMPRA Y ALQUILER*/

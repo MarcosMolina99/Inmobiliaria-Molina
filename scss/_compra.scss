@@ -1,17 +1,18 @@
-
+@import "contenidosass";
 body{
     main{
-        h2{
-            width: 1800px;
-            margin-right: 0%;
+        div{
+            h2{
+                width: 1902px;
+                margin-right: 0%;
+            }  
         }
+
         
         .todasEnCompra{
-            margin-right: 0%;
-            padding-right: 0%;
             display: grid;
-            grid-template-rows: auto auto auto;
-            grid-template-columns: 1fr auto;
+            grid-template-rows: auto auto auto auto auto;
+            grid-template-columns: 1fr 3fr;
             row-gap: 20px;
             grid-template-areas:
             "foto1 descripcion1"
@@ -31,13 +32,9 @@ body{
                 }
             }
             .descripcionCasa1{
-                font-size: 20px;
                 text-align: left;
                 grid-area: descripcion1;
-                border-top: 2px solid black;
-                border-right: 2px solid black;
-                border-bottom: 1px solid black;
-                border-left: none;
+                @include contenidoDescripcion;
 
                 .textoCasa1{
                     padding: 30px;
@@ -45,22 +42,17 @@ body{
                 }
 
                 #detallesCasaUno{
-                    border-top: 1px solid black;
-                    border-left: 2px solid black;
+                    @include borderColapse;
                     margin-top: 42px;
                 }
 
                 #botonDetalles{
                     margin-left: 80%;
                     margin-top: 140px;
-                    font-size: 20px;
-                    color: green;
-                    background-color: white;
-                    border-color: green;
+                    @include detallesBoton;
 
                     &:hover{
-                        background-color: green;
-                        color: white;
+                        @include contenidoHover;
                     }
                 }
             }
@@ -77,35 +69,26 @@ body{
             }
 
             .descripcionCasa2{
-                font-size: 20px;
                 text-align: left;
                 grid-area: descripcion2;
-                border-top: 2px solid black;
-                border-right: 2px solid black;
-                border-bottom: 1px solid black;
-                border-left: none;
+                @include contenidoDescripcion;
 
                 .textoCasa2{
                     padding: 30px;
                 }
 
                 #detallesCasaDos{
-                    border-top: 1px solid black;
-                    border-left: 2px solid black;
+                    @include borderColapse;
                     margin-top: 69px;
                 }
 
                 #botonDetalles2{
                     margin-left: 80%;
                     margin-top: 50px;
-                    font-size: 20px;
-                    color: green;
-                    background-color: white;
-                    border-color: green;
+                    @include detallesBoton;
 
                     &:hover{
-                        background-color: green;
-                        color: white;
+                        @include contenidoHover;
                     }
                 }
             }
@@ -123,40 +106,32 @@ body{
             }
 
             .descripcionCasa3{
-                font-size: 20px;
                 text-align: left;
                 grid-area: descripcion3;
-                border-top: 2px solid black;
-                border-right: 2px solid black;
-                border-bottom: 1px solid black;
-                border-left: none;
+                @include contenidoDescripcion;
 
                 .textoCasa3{
                     padding: 30px;
                 }
 
                 #detallesCasaTres{
-                    border-top: 1px solid black;
-                    border-left: 2px solid black;
+                    @include borderColapse;
                     margin-top: 96px;
-                    margin-left: 0px;
+                    margin-left: -1px;
+                    margin-right: 0%;
 
                     .col{
-                        padding-left: 0%;
+                        padding:0%
                     }
                 }
 
                 #botonDetalles3{
                     margin-left: 80%;
                     margin-top: 80px;
-                    font-size: 20px;
-                    color: green;
-                    background-color: white;
-                    border-color: green;
+                    @include detallesBoton;
 
                     &:hover{
-                        background-color: green;
-                        color: white;
+                        @include contenidoHover;
                     }
                 }
 
@@ -173,40 +148,32 @@ body{
                 }
             }
             .descripcionCasa4{
-                font-size: 20px;
                 text-align: left;
                 grid-area: descripcion4;
-                border-top: 2px solid black;
-                border-right: 2px solid black;
-                border-bottom: 1px solid black;
-                border-left: none;
+                @include contenidoDescripcion;
 
                 .textoCasa4{
                     padding: 30px;
                 }
 
                 #detallesCasaCuatro{
-                    border-top: 1px solid black;
-                    border-left: 2px solid black;
+                    @include borderColapse;
                     margin-top: 96px;
-                    margin-left: 0px;
+                    width: 1275px;
+                    margin-left: -1px;
 
                     .col{
-                        padding-left: 0px;
+                        padding: 0px;
                     }
                 }
 
                 #botonDetalles4{
                     margin-left: 80%;
                     margin-top: 80px;
-                    font-size: 20px;
-                    color: green;
-                    background-color: white;
-                    border-color: green;
+                    @include detallesBoton;
 
                     &:hover{
-                        background-color: green;
-                        color: white;
+                        @include contenidoHover;
                     }
                 }
             }
@@ -225,23 +192,19 @@ body{
             }
 
             .descripcionCasa5{
-                font-size: 20px;
                 text-align: left;
                 grid-area: descripcion5;
-                border-top: 2px solid black;
-                border-right: 2px solid black;
-                border-bottom: 1px solid black;
-                border-left: none;
+                @include contenidoDescripcion;
 
                 .textoCasa5{
                     padding: 30px;
                 }
 
                 #detallesCasaCinco{
-                    border-top: 1px solid black;
-                    border-left: 2px solid black;
+                    @include borderColapse;
                     margin-top: 96px;
-                    margin-left: 0%;
+                    width: 1275px;
+                    margin-left: -1px;
 
                     .col{
                         padding: 0%;
@@ -251,14 +214,10 @@ body{
                 #botonDetalles5{
                     margin-left: 80%;
                     margin-top: 80px;
-                    font-size: 20px;
-                    color: green;
-                    background-color: white;
-                    border-color: green;
+                    @include detallesBoton;
 
                     &:hover{
-                        background-color: green;
-                        color: white;
+                        @include contenidoHover;
                     }
                 }
             }
