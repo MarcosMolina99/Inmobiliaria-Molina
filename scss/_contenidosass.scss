@@ -5,17 +5,36 @@
     color: white;
 }
 
-@mixin contenidoDescripcion{
+@mixin contenidoDescripcionCompra{
     font-size: 20px;
     border-right: 2px solid black;
     border-top: 2px solid black;
     border-bottom: 1px solid black;
+    width: 1275px;
+    text-align: left;
     border-left: none;
 }
 
-@mixin borderColapse{
+@mixin contenidoDescripcionAlquiler{
+    font-size: 20px;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 1px solid black;
+    width: 1295px;
+    text-align: left;
+    border-left: none;
+}
+
+@mixin borderColapseCompra{
     border-top: 1px solid black;
-    border-left: 2px solid black;
+    border-left: 1px solid black;
+    width: 1273px;
+}
+
+@mixin borderColapseAlquiler{
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    width: 1295px;
 }
 
 @mixin detallesBoton{
@@ -37,6 +56,7 @@
 }
 
 @mixin tabletFotos{
+    border: 2px solid black;
     margin-top: 10px;
     margin-left: 60px;
     height: 400px;
@@ -62,7 +82,7 @@
     margin-top: 10px;
     margin-left: 0px;
     margin-bottom: 0%;
-    height: 250px;
+    height: 200px;
     width: 300px;
     border-bottom: none;
 }

@@ -13,12 +13,15 @@
     }
     header{
         grid-area: header;
+        width: 768px;
     }
     main{
         grid-area: main;
     }
-    footer{
+    .pieDePagina{
         grid-area: footer;
+        padding-bottom: 20px;
+        width: 768px;
     }
 
     .contenedorPadre{
@@ -31,6 +34,7 @@
                 width:768px;
 
                 h2{
+                    margin-left: 0px;
                     width: 768px;
                 }
 
@@ -38,7 +42,12 @@
                     margin: 0%;
                     width: 768px;
                 }
-            }    
+            }
+            section{
+                .introduccion{
+                    margin-left: 0%;
+                }
+            }
 
             section{
 
@@ -58,35 +67,41 @@
             }
 
             .marcas{
+                width: 768px;
+                display: inline;
 
                 div{
                     #seguridadInformatica{
-                        margin-right: 40px;
+                        margin-left: 330px;
                     }
 
                     #ciberseguridad{
                         text-align: center;
-                        margin-left: 110px;
+                        margin-left: 20px;
                     }
                 }
-                div{
+                .bloqueTotal{
 
                     #pintureria{
-                        margin-right: 5px;
+                        margin-left: 340px;
                     }
 
                     #descripcionPintureria{
                         text-align: center;
-                        margin-left: 55px;
+                        margin-left: 30px;
                     }
                 }
 
-                div{
+                .bloqueWox{
+
+                    #ventanas{
+                        margin-left: 330px;
+                    }
 
                     #marcaVentanas{
                         text-align: center;
-                        margin-left: 85px;
-                        margin-right: 0%;
+                        margin-right: 40px;
+                        
                     }
                 }
             }
@@ -150,7 +165,6 @@
                 }
             }
         }
-
     }
 /*/CONTACTO*/
 
@@ -195,12 +209,13 @@
 
                         .textoCasa1{
                             border-top: none;
-                            margin-top: 50px;
+                            margin-top: 30px;
                         }
 
                         #detallesCasaUno{
                             border: 1px solid black;
                             margin-top: 50px;
+                            width: 648px;
                         }
 
                         #botonDetalles{
@@ -222,11 +237,12 @@
 
                         .textoCasa2{
                             border-top: none;
-                            margin-top: 10px;
+                            margin-top: -30px;
                         }
 
                         #detallesCasaDos{
                             border: 1px solid black;
+                            width: 648px;
                             margin-top: 80px;
                         }
 
@@ -248,13 +264,13 @@
 
                         .textoCasa3{
                             border-top: none;
-                            margin-top: 50px;
+                            margin-top: 30px;
                         }
 
                         #detallesCasaTres{
                             border: 1px solid black;
                             margin-top: 60px;
-                            width: 646px;
+                            width: 648px;
                             
 
                             .col{
@@ -280,13 +296,13 @@
 
                         .textoCasa4{
                             border-top: none;
-                            margin-top: 50px;
+                            margin-top: 30px;
                         }
 
                         #detallesCasaCuatro{
                             border: 1px solid black;
                             margin-top: 60px;
-                            width: 646px;
+                            width: 648px;
                             
 
                             .col{
@@ -312,13 +328,12 @@
 
                         .textoCasa5{
                             border-top: none;
-                            margin-top: 50px;
+                            margin-top: 40px;
                         }
 
                         #detallesCasaCinco{
-                            border: 1px solid black;
                             margin-top: 60px;
-                            width: 646px;
+                            width: 648px;
                             
                             .col{
                                 padding-right: 0%;
@@ -409,13 +424,13 @@
 
                         .textoAlquiler1{
                             border-top: none;
-                            margin-top: 50px;
+                            margin-top: 30px;
                         }
 
                         #detallesAlquilerUno{
                             border: 1px solid black;
-                            border-right: 0ch;
                             margin-top: 60px;
+                            width: 648px;
                         }
 
                         #botonDetallesAlquiler1{
@@ -441,13 +456,13 @@
 
                         .textoAlquiler2{
                             border-top: none;
-                            margin-top: 10px;
+                            margin-top: -30px;
                         }
 
                         #detallesAlquilerDos{
                             border: 1px solid black;
-                            border-right: 0ch;
                             margin-top: 60px;
+                            width: 648px;
                         }
 
                         #botonDetallesAlquiler2{
@@ -471,12 +486,12 @@
 
                         .textoAlquiler3{
                             border-top: none;
-                            margin-top: 50px;
+                            margin-top: 30px;
                         }
 
                         #detallesAlquilerTres{
                             border: 1px solid black;
-                            border-right: 0ch;
+                            width: 648px;
                             margin-top: 60px;
                         }
 
@@ -502,12 +517,12 @@
 
                         .textoAlquiler4{
                             border-top: none;
-                            margin-top: 50px;
+                            margin-top: -20px;
                         }
 
                         #detallesAlquilerCuatro{
                             border: 1px solid black;
-                            border-right: 0ch;
+                            width: 648px;
                             margin-top: 60px;
                         }
 
@@ -533,12 +548,12 @@
 
                         .textoAlquiler5{
                             border-top: none;
-                            margin-top: 50px;
+                            margin-top: -20px;
                         }
 
                         #detallesAlquilerCinco{
                             border: 1px solid black;
-                            border-right: 0ch;
+                            width: 648px;
                             margin-top: 60px;
                         }
 

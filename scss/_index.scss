@@ -4,6 +4,8 @@ body{
             width: 1776px;
             .tituloCarousel{
                 margin-top: 70px;
+                margin-bottom: 10px;
+                margin-left: 100px;
                 font-style: italic;
                 text-align: center;
             }
@@ -19,6 +21,7 @@ body{
                 font-size: 22px;
                 margin-top: 60px;
                 font-weight: bold;
+                margin-left: 60px;
             }
         }
         section{
@@ -40,14 +43,14 @@ body{
 
         .recomendacion{
             margin-top: 30px;
-            margin-left: 550px;
+            margin-left: 480px;
             font-size: 24px;
         }
         .marcas{
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
-            margin-right: 150px;
+            // margin-right: 150px;
 
             div{
                 .fotosPatrocinios{
@@ -62,16 +65,22 @@ body{
                     margin-top: 40px;
                 }
             }
-            div{
+            .bloqueTotal{
+
                 #pintureria{
-                    margin-left: 90px;
+                    margin-left: 50px;
+                }
+                #descripcionPintureria{
+                    margin-left: 20px;
+
+                }
+            }    
+            .bloqueWox{
+                #marcaVentanas{
+                    margin-left: 75px;
                 }
             }
-            div{
-                #ventanas{
-                    margin-left: 150px;
-                }
-            }
-        }
+            
+        }    
     }
 }

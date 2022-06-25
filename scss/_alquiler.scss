@@ -5,7 +5,7 @@ body{
         .todasEnAlquiler{
             display: grid;
             grid-template-rows: auto auto auto auto auto;
-            grid-template-columns: 1fr auto;
+            grid-template-columns: 1fr 3fr;
             row-gap: 20px;
             grid-template-areas:
             "fotoAlquiler1 descripcionAlquiler1"
@@ -25,15 +25,16 @@ body{
             }
             .descripcionAlquiler1{
                 grid-area: descripcionAlquiler1;
-                @include contenidoDescripcion;
+                @include contenidoDescripcionAlquiler;
 
                 .textoAlquiler1{
                     padding: 30px;
                 }
 
                 #detallesAlquilerUno{
-                    @include borderColapse;
+                    @include borderColapseAlquiler;
                     margin-top: 62px;
+                    width: 1295px;
                 }
 
                 #botonDetallesAlquiler1{
@@ -60,14 +61,14 @@ body{
 
             .descripcionAlquiler2{
                 grid-area: descripcionAlquiler2;
-                @include contenidoDescripcion;
+                @include contenidoDescripcionAlquiler;
 
                 .textoAlquiler2{
                     padding: 30px;
                 }
 
                 #detallesAlquilerDos{
-                    @include borderColapse;
+                    @include borderColapseAlquiler;
                     margin-top: 36px;
                 }
 
@@ -96,15 +97,14 @@ body{
 
             .descripcionAlquiler3{
                 grid-area: descripcionAlquiler3;
-                @include contenidoDescripcion;
+                @include contenidoDescripcionAlquiler;
 
                 .textoAlquiler3{
                     padding: 30px;
                 }
 
                 #detallesAlquilerTres{
-                    border-top: 1px solid black;
-                    border-left: 2px solid black;
+                    @include borderColapseAlquiler;
                     margin-top: 56px;
                 }
 
@@ -132,14 +132,14 @@ body{
 
             .descripcionAlquiler4{
                 grid-area: descripcionAlquiler4;
-                @include contenidoDescripcion;
+                @include contenidoDescripcionAlquiler;
 
                 .textoAlquiler4{
                     padding: 30px;
                 }
 
                 #detallesAlquilerCuatro{
-                    @include borderColapse;
+                    @include borderColapseAlquiler;
                     margin-top: 36px;
                 }
 
@@ -167,14 +167,14 @@ body{
 
             .descripcionAlquiler5{
                 grid-area: descripcionAlquiler5;
-                @include contenidoDescripcion;
+                @include contenidoDescripcionAlquiler;
 
                 .textoAlquiler5{
                     padding: 30px;
                 }
 
                 #detallesAlquilerCinco{
-                    @include borderColapse;
+                    @include borderColapseAlquiler;
                     margin-top: 36px;
                 }
 
