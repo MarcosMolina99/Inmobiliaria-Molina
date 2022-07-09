@@ -34,6 +34,7 @@ body{
             }
             .descripcionCasa1{
                 grid-area: descripcion1;
+                
                 @include contenidoDescripcionCompra;
 
                 .textoCasa1{
